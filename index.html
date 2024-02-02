@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meta tag que descreve o conteudo da sua pagina, ajuda o usuário a saber do que se trata a pagina -->
+    <meta name="description" content="Empresa no setor de Marketing Digital" />
+    <!-- meta tag que descreve quem criou a pagina -->
+    <meta name="author" content="DNA Marketing Digital" />
+    <!-- Chaves da pagina, É quando você pesquisa pelo um nome e aparece na pesquisa a pagina -->
+    <meta name="keyword"
+        content="DNA Marketing Digital, Marketing Digital para sua empresa, Como fazer Marketing em sua empresa " />
+
+    <!-- meta tag robots, ela se refere ao navegador e específica se será visivel a pagina ou não ou se pode usar um link de referencia dentro da pagina-->
+    <meta name="robots" content="index follow" />
+
+
+    <!-- Link da font de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+    <!-- Style global da pagina -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>DNA - Marketing Digital</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+
+                screens: {
+                    'xsmall': { 'max': '380px' },
+                    'small': { 'min': '381px', 'max': '599px' },
+                    'md': { 'min': '600px', 'max': '960px' },
+                    'lg': { 'min': '961px', 'max': '1440px' },
+                    'xl': { 'min': '1441px', 'max': '1900px' },
+                    '2xl': { 'min': '1901px' }
+                },
+
+                extend: {
+                    backgroundColor: {
+                        blue: "#1B263B"
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'poppins': "'Poppins'"
+                    },
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header id="home" class="flex justify-around items-center py-3 shadow-lg shadow-zinc-100 small:relative">
+        <figure>
+            <img src="assets/logo.png" alt="" width="40px">
+        </figure>
+        <div class="md:hidden lg:hidden xl:hidden">
+            <button 
+            type="menu"
+            onclick="BtnClose()"
+            class=" rotate-90">|||</button>
+        </div>
+        <nav id="navBar"
+            class="small:absolute small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:absolute xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden">
+
+            <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden">
+                <button
+                 onclick="BtnClose()" 
+                 class="font-bold">
+                    x
+                </button>
+            </div>
+
+            <ul
+            
+                class="flex justify-center items-center space-x-10 small:block small:h-screen small:text-center small:p-0 list-none small:space-y-4 xsmall:block xsmall:h-screen xsmall:text-center xsmall:p-0 list-none xsmall:space-y-4">
+                <li class="hover:text-zinc-300 " onclick="BtnClose()">
+                    <a href="#home" class="small:text-zinc-50 small:ml-5 xsmall:text-zinc-50 xsmall:ml-5">Home</a>
+                </li>
+                <li class="hover:text-zinc-300" onclick="BtnClose()">
+                    <a href="#about" class="small:text-zinc-50 xsmall:text-zinc-50">Quem Sobre</a>
+                </li>
+                <li class="hover:text-zinc-300" onclick="BtnClose()">
+                    <a href="#services" class="small:text-zinc-50 xsmall:text-zinc-50 ">Serviços</a>
+                </li>
+                <li class="hover:text-zinc-300" onclick="BtnClose()">
+                    <a href="#contact-form" class="small:text-zinc-50 xsmall:text-zinc-50 ">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="banner" class="flex justify-around small:flex-col">
+            <!-- Banner -->
+            <div class="font-poppins flex justify-center items-center flex-col gap-10 flex-col">
+
+                <h1>Bem-vindo à DNA MARKETING DIGITAL</h1>
+                <p>Impulsionamos o seu negócio com estratégias digitais inovadoras e personalizadas.</p>
+            </div>
+            <figure>
+                <img src="assets/Banner.jpeg" alt="" width="100%">
+            </figure>
+
+        </section>
+
+        <section id="contact" class="flex justify-around items-center my-10 bg-blue text-zinc-50 py-10 font-poppins small:flex-col xsmall:flex-col md:flex-col">
+            <!-- Formulario -->
+            <div class="w-2/4 small:w-11/12 xsmall:w-11/12 md:w-10/12">
+                <h2 class="font-bold text-2xl uppercase text-center mb-10">
+                    Entrar em contato
+                </h2>
+                <p class="leading-8 small:text-[14px] small:text-center xsmall:text-[13px] xsmall:text-center md:text-[14px] md:text-center">
+                    Na DNA - Digital, estamos sempre prontos para ouvir suas necessidades e ajudá-lo a alcançar seus
+                    objetivos de marketing digital.
+                    Seja você uma startup ansiosa por fazer sua marca decolar, ou uma empresa estabelecida procurando
+                    inovar e expandir seu alcance online,
+                    nossa equipe está aqui para transformar suas ideias em realidade.
+                </p>
+            </div>
+            <div>
+                <form action="" method="post" class="w-96 small:w-60 xsmall:w-full ">
+
+                    <div class="flex flex-col py-3">
+                        <label for="txemail">
+                            Nome:
+                        </label>
+                        <input type="text" id="txemail" placeholder="Digite o seu Nome" title="Digite seu email aqui"
+                            class="p-2  text-zinc-900" required>
+                    </div>
+                    <div class="flex flex-col  py-3">
+                        <label for="txpassword">
+                            Telefone:
+                        </label>
+                        <input type="tel" id="txpassword" placeholder="Digite o sue Telefone"
+                            title="Digite seu Senha aqui" class="p-2 text-zinc-900" required>
+                    </div>
+
+                    <!-- NÃO TEM AINDA O ENVIO DO FORM -->
+                    <button type="submit" class="py-2 px-4 bg-green-600 font-bold">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <section id="services" class="my-10">
+            <!-- Title e sobre titulo da pagina -->
+            <div class="text-center">
+                <h2 class="font-bold text-2xl font-poppins md:text-xl small:text-xl xsmall:text-lg">
+                    O Nosso Compromisso com Você
+                </h2>
+
+                <p class="w-3/4 mx-auto font-poppins mb-10 mt-4 md:w-11/12 md:text-[15px] small:text-[14px] small:w-11/12 xsmall:w-full xsmall:text-[14px]">
+                    Na DNA Marketing, entendemos que o cenário digital de hoje está em constante evolução, trazendo
+                    tanto desafios quanto oportunidades para o seu negócio. Nossa missão é transformar esses desafios em
+                    oportunidades, empoderando sua marca a alcançar novos patamares.
+                </p>
+            </div>
+
+            <!-- Container Card -->
+            <div class="flex items-center justify-center gap-10 flex-wrap flex-row max-w-[1260px] mx-auto">
+
+                <!-- Card 1 -->
+                <div class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full ">
+                    <div class="flex items-center relative justify-center">
+
+                        <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-1">
+                            <img src="assets/icon-anuncio-pago.png" alt="" class="w-20 ">
+                        </figure>
+                        <h3 class="text-xl font-bold">
+                            Soluções Personalizadas para Seu Sucesso
+                        </h3>
+                    </div>
+
+                    <p class="font-poppins text-sm mt-10">
+                        Cada negócio é único, e é por isso que adotamos uma abordagem personalizada para cada um de
+                        nossos clientes. Nossa equipe de especialistas
+                        trabalha lado a lado com você para entender as especificidades
+                        do seu negócio, identificar suas necessidades exclusivas e desenvolver estratégias digitais sob
+                        medida que impulsionam resultados reais.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
+
+                    <div class="flex items-center relative justify-center ">
+
+                        <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-2">
+                            <img src="assets/icon-inovacao.png" alt="" class="w-12 h-12 ">
+                        </figure>
+
+                        <h3 class="text-xl font-bold">
+                            Inovação ao Seu Alcance
+                        </h3>
+                    </div>
+                    <p class="font-poppins text-sm mt-10">
+                        Manter-se à frente no mercado digital requer inovação constante. Nossa empresa está na vanguarda
+                        das últimas tendências e tecnologias em marketing
+                        digital, desde inteligência artificial até análise de dados avançada, garantindo que sua marca
+                        não apenas acompanhe, mas lidere em seu setor.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
+                    <div class="flex items-center relative justify-center">
+
+                        <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-2">
+                            <img src="assets/icon-email-pago.png" alt="" class="w-12 h-12 ">
+                        </figure>
+
+                        <h3 class="text-xl font-bold">
+                            Resultados que Falam por Si Mesmos
+                        </h3>
+                    </div>
+                    <p class="font-poppins text-sm mt-10">
+                        Nosso foco está nos resultados. Seja aumentando a visibilidade da sua marca, melhorando as taxas
+                        de conversão ou maximizando o ROI das suas campanhas de marketing digital, nosso objetivo é
+                        gerar impacto mensurável que contribua para o crescimento sustentável do seu negócio.
+                    </p>
+                </div>
+                <!-- Card 4 -->
+                <div class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
+                    <div class="flex items-center relative justify-center">
+
+                        <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-2">
+                            <img src="assets/icon-suport.png" alt="" class="w-12 h-12 ">
+                        </figure>
+
+                        <h3 class="text-xl font-bold">
+                            Parceria e Suporte Contínuos
+                        </h3>
+                    </div>
+                    <p class="font-poppins text-sm mt-10">
+                        Consideramos nossos clientes como parceiros. Estamos comprometidos em fornecer não apenas
+                        soluções excepcionais, mas também suporte contínuo. Nossa equipe está sempre pronta para
+                        responder às suas perguntas, ajudá-lo a navegar por novos desafios e garantir que sua estratégia
+                        digital continue evoluindo junto com seu negócio.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <!-- Sobre Nos -->
+            <div class="w-3/4 mx-auto my-10 font-poppins xsmall:w-11/12 small:w-11/12">
+                <h2 class="uppercase text-center font-bold text-2xl xsmall:xl">
+                    Sobre nós
+                </h2>
+
+                <p class="my-5 text-justify leading-8">
+                    A Empresa denominada "DNA Markting Digital", é uma plataforma vibrante e inovadora projetada
+                    especificamente para o público jovem. Com uma
+                    abordagem moderna e uma estética atraente, a DNA Markting captura a essência da juventude e da
+                    inovação,
+                    oferecendo soluções de marketing digital que ressoam
+                    com as tendências atuais e as demandas desse público dinâmico.
+                </p>
+                <p class="my-5 text-justify leading-8">
+                    A DNA Markting se especializa em criar campanhas envolventes e conteúdo criativo que falam
+                    diretamente
+                    com a geração Z e os millennials, utilizando as últimas
+                    tecnologias e plataformas de mídia social para maximizar o impacto e a interação. Seus serviços
+                    incluem
+                    marketing de influência, gestão de mídias sociais, criação
+                    de conteúdo viral, SEO otimizado para a nova geração e estratégias publicitárias inovadoras que
+                    capturam
+                    a essência da marca de seus clientes, ao mesmo tempo em que
+                    engajam seu público-alvo jovem.
+                </p>
+                <p class="my-5 text-justify leading-8">
+                    Com uma equipe composta por jovens talentos que entendem profundamente a cultura digital e as
+                    nuances
+                    desse segmento demográfico, a DNA Markting posiciona-se como
+                    a escolha ideal para marcas que buscam rejuvenescer sua presença online e conectar-se autenticamente
+                    com
+                    o público jovem. A plataforma não apenas oferece estratégias
+                    de marketing de ponta, mas também se compromete a educar e inspirar seus clientes por meio de
+                    webinars,
+                    workshops e conteúdos interativos focados nas últimas tendências
+                    do marketing digital.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact-form" class="bg-blue">
+
+            <div class="flex tems-center justify-center flex-col w-3/4 mx-auto text-zinc-50 py-3 small:w-11/12 xsmall:w-full">
+                <div class="text-center">
+                    <h2 class="font-poppins font-bold text-2xl my-3 small:text-xl xsmall:text-lg">
+                        Entrar em Contato
+                    </h2>
+                    <p class="font-poppins text-[16px] xsmall:text-[13px] small:text-[14px]">
+                        Após o envio do formulario entraremos em contato dentro de 30 minutos.
+                    </p>
+                </div>
+
+                <div>
+                    <form action="" method="post" class="flex flex-col">
+                        <!-- Input Nome -->
+                        <div class="flex flex-col">
+                            <label for="txnome" class="my-2">
+                                Nome:
+                            </label>
+                            <input type="text" name="txnome" id="txnome"
+                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg"
+                                placeholder="Digite seu Nome" required>
+                        </div>
+                        <!-- Input Email -->
+                        <div class="flex flex-col">
+                            <label for="txemail" class="my-2">
+                                E-mail:
+                            </label>
+                            <input type="email" name="txemail" id="txemail"
+                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg"
+                                placeholder="Digite seu E-mail" required>
+                        </div>
+                        <!-- Input Telefone -->
+                        <div class="flex flex-col">
+                            <label for="txtel" class="my-2">
+                                Telefone:
+                            </label>
+                            <input type="tel" name="txtel" id="txtel"
+                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg"
+                                placeholder="Digite o Número de telefone" required>
+                        </div>
+                        <!-- Input Site ULR -->
+                        <div class="flex flex-col">
+                            <label for="txsite" class="my-2">
+                                Ulr Site:
+                            </label>
+                            <input type="text" name="txsite" id="txsite"
+                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg"
+                                placeholder="Digite o link do Web Site (Opicional)">
+                        </div>
+
+                        <div class="my-7 mx-auto">
+                            <button class="bg-green-500 hover:bg-green-700 py-2 px-10 font-bold">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="">
+            <h3 class="text-2xl font-bold text-center py-20">DEPOIMENTOS DE CLIENTES</h3>
+        </section>
+    </main>
+
+    <footer class=" bg-blue text-zinc-50 font-poppins text-xs pt-10">
+
+        <figure class="flex items-center justify-center mb-5">
+            <img src="assets/logo.png" alt="" class="w-10">
+        </figure>
+
+        <div class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10">
+            <div>
+                <ul class="">
+                    <h3 class="font-bold text-xl">
+                        Redes Sociais
+                    </h3>
+                    <li>
+                        <figure class="flex space-x-4 mt-4">
+                            <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10">
+                            <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" class="w-10">
+                            <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" class="w-10">
+
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" text-center">
+                <ul class="space-y-2">
+                    <h3 class="font-bold text-2xl">
+                        Empresa
+                    </h3>
+                    <li>
+                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8">Local: R. Viçosa do Ceará </a>
+                    </li>
+                    <li>
+                        <a href="">Atendimento das 09hrs ás 17hrs</a>
+                    </li>
+                    <li>
+                        <a href="tel:11 99999-9999">WhatsApp: (11) 99999-9999</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+            <p class="text-[10px] xsmall:text-[8px]">
+                &copy; 2024 DNA MARKETINGDIGITAL. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+
+    Fundada em 2000, A DNA MARKETING DIGITAL é especialista em soluções digitais para todo tipo de negócio , 
+ -->
