@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Link da font de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+
+                screens: {
+                    'xsmall': { 'max': '380px' },
+                    'small': { 'min': '381px', 'max': '599px' },
+                    'md': { 'min': '600px', 'max': '960px' },
+                    'lg': { 'min': '961px', 'max': '1440px' },
+                    'xl': { 'min': '1441px', 'max': '1900px' },
+                    '2xl': { 'min': '1901px' }
+                },
+
+                extend: {
+                    backgroundColor: {
+                        blue: "#1B263B"
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                        blueText: "0803FF",
+                        grayParagrafo: "#5B5F62"
+                    },
+                    fontFamily: {
+                        'poppins': "'Poppins'"
+                    },
+
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
+        <div class="max-width-[1440px] flex justify-around items-center">
+            <figure>
+              <a href="index.html"> 
+                <img src="assets/Frame 1.png" alt="" width="80px">
+            </a>
+            </figure>
+
+            <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
+
+                <button type="menu" onclick="BtnClose()">
+                    <!-- Svg menu hamburgue -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <nav id="navBar"
+                class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
+
+                <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden 2xl:hidden">
+                    <button onclick="BtnClose()" class="font-bold">
+                        <!-- Botão com uma imagem de fundo para sair da tela do usuário -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </button>
+                </div>
+
+                <ul
+                    class="flex justify-center items-center space-x-10  small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
+                    <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                        onclick="BtnClose()">
+                        <a href="index.html#plan"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            Planos</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                        onclick="BtnClose()">
+                        <a href="index.html#about"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
+                            Quem Sobre</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                        onclick="BtnClose()">
+                        <a href="index.html#services"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            Serviços</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
+                        onclick="BtnClose()">
+                        <a href="index.html#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                            small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
+                            md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
+                             lg:bg-green-400 lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
+                             xl:bg-green-400 xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
+                             2xl:bg-green-400 2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
+                            Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Texto completo sobre a empresa -->
+    <section id="about">
+        <!-- Sobre Nos -->
+        <div class="w-3/4 mx-auto my-10 font-poppins xsmall:w-11/12 small:w-11/12">
+            <h2 class="uppercase text-center font-bold text-2xl xsmall:xl">
+                Sobre nós
+            </h2>
+
+            <p class="my-5 text-justify leading-8">
+                A Empresa denominada "DNA Markting Digital", é uma plataforma vibrante e inovadora projetada
+                especificamente para o público jovem. Com uma
+                abordagem moderna e uma estética atraente, a DNA Markting captura a essência da juventude e da
+                inovação,
+                oferecendo soluções de marketing digital que ressoam
+                com as tendências atuais e as demandas desse público dinâmico.
+            </p>
+            <p class="my-5 text-justify leading-8">
+                A DNA Markting se especializa em criar campanhas envolventes e conteúdo criativo que falam
+                diretamente
+                com a geração Z e os millennials, utilizando as últimas
+                tecnologias e plataformas de mídia social para maximizar o impacto e a interação. Seus serviços
+                incluem
+                marketing de influência, gestão de mídias sociais, criação
+                de conteúdo viral, SEO otimizado para a nova geração e estratégias publicitárias inovadoras que
+                capturam
+                a essência da marca de seus clientes, ao mesmo tempo em que
+                engajam seu público-alvo jovem.
+            </p>
+            <p class="my-5 text-justify leading-8">
+                Com uma equipe composta por jovens talentos que entendem profundamente a cultura digital e as
+                nuances
+                desse segmento demográfico, a DNA Markting posiciona-se como
+                a escolha ideal para marcas que buscam rejuvenescer sua presença online e conectar-se autenticamente
+                com
+                o público jovem. A plataforma não apenas oferece estratégias
+                de marketing de ponta, mas também se compromete a educar e inspirar seus clientes por meio de
+                webinars,
+                workshops e conteúdos interativos focados nas últimas tendências
+                do marketing digital.
+            </p>
+        </div>
+    </section>
+
+
+    <footer class=" bg-blue text-zinc-50 font-poppins text-xs pt-10">
+
+        <figure class="flex items-center justify-center mb-5">
+            <img src="assets/Frame 1.png" alt="" class="w-20">
+        </figure>
+
+        <div
+            class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10">
+            <div>
+                <ul class="">
+                    <h3 class="font-bold text-xl">
+                        Redes Sociais
+                    </h3>
+                    <li>
+                        <figure class="flex space-x-4 mt-4">
+                            <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10">
+                            <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" class="w-10">
+                            <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" class="w-10">
+
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" text-center">
+                <ul class="space-y-2">
+                    <h3 class="font-bold text-2xl">
+                        Empresa
+                    </h3>
+                    <li>
+                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8">Local: R. Viçosa do Ceará </a>
+                    </li>
+                    <li>
+                        <a href="">Atendimento das 09hrs ás 17hrs</a>
+                    </li>
+                    <li>
+                        <a href="tel:11 99999-9999">WhatsApp: (11) 99999-9999</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+            <p class="text-[10px] xsmall:text-[8px]">
+                &copy; 2024 DNA MARKETINGDIGITAL. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

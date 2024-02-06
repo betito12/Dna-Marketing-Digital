@@ -45,7 +45,8 @@
 
                 extend: {
                     backgroundColor: {
-                        blue: "#1B263B"
+                        blue: "#152ec0",
+                        blueorigin: "#1B263B"
                     },
                     colors: {
                         clifford: '#da373d',
@@ -67,7 +68,10 @@
     <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
         <div class="max-width-[1440px] flex justify-around items-center">
             <figure>
-                <img src="assets/Frame 1.png" alt="" width="80px">
+                <a href="index.html">
+                    <img src="assets/Frame 1.png" alt="Logo da Empresa DNA Marketing" width="80px"
+                        title="Logo da Empresa DNA Marketing">
+                </a>
             </figure>
 
             <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
@@ -110,7 +114,7 @@
                         onclick="BtnClose()">
                         <a href="#about"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
-                            Quem Sobre</a>
+                            Quem Somos</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
                         onclick="BtnClose()">
@@ -118,7 +122,7 @@
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Serviços</a>
                     </li>
-                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
                         onclick="BtnClose()">
                         <a href="#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
                             small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
@@ -150,7 +154,8 @@
                 </h1>
                 <p class="xsmall:text-xs small:text-sm">Expanda seus negócios sem fronteiras, com Marketing Digital.</p>
 
-                <button class="bg-green-500 text-zinc-50 font-bold py-2 px-10 rounded-xl self-start">Planos</button>
+                <a href="#plan"
+                    class="bg-green-500 text-zinc-50 font-bold py-2 px-10 rounded-xl self-start active:scale-105">Planos</a>
             </div>
 
             <figure class="">
@@ -163,7 +168,7 @@
 
         <section id="services">
             <!-- Titulo de Serviços -->
-            <div class="w-3/4 mx-auto mt-10 xsmall:w-full small:w-full md:w-11/12">
+            <div class="w-3/4 mx-auto mt-10 xsmall:w-full small:w-full md:w-11/12 max-w-[1440px] mx-auto">
                 <h2 class="uppercase font-bold text-center mb-5 text-2xl">
                     Serviços
                 </h2>
@@ -182,7 +187,8 @@
                 <!-- Card de serviços -->
                 <div class="flex items-center justify-center gap-5 flex-wrap">
 
-                    <div class="max-w-[280px] w-full flex flex-col items-center justify-center  hover:shadow-xl rounded-lg pb-2">
+                    <div
+                        class="max-w-[280px] w-full flex flex-col items-center justify-center  hover:shadow-xl rounded-lg pb-2">
                         <figure>
                             <img src="assets/icon-marketing.png" alt="icon de marketing" title="icon de Marketing">
                         </figure>
@@ -195,7 +201,8 @@
                         </p>
                     </div>
                     <!-- Card WebSite -->
-                    <div class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
+                    <div
+                        class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
                         <figure>
                             <img src="assets/icon-dev.png" alt="icon de Dev" title="icon de Dev">
                         </figure>
@@ -208,7 +215,8 @@
                         </p>
                     </div>
                     <!-- Card Design -->
-                    <div class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
+                    <div
+                        class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
                         <figure>
                             <img src="assets/icon-design.png" alt="icon de Web Designer" title="icon de Web Designer">
                         </figure>
@@ -224,156 +232,164 @@
 
         </section>
 
-
-
+        <!-- Revisar e incrementar os planos da plataforma -->
+        <!-- Planos da plataforma -->
         <section id="plan" class="my-20">
-            <!-- Title e sobre titulo da pagina -->
-            <div class="text-center">
-                <h2 class="font-bold text-2xl font-poppins md:text-xl small:text-xl xsmall:text-lg">
-                    O Nosso Compromisso com Você
-                </h2>
 
-                <p
-                    class="w-3/4 mx-auto font-poppins mb-10 mt-4 md:w-11/12 md:text-[15px] small:text-[14px] small:w-11/12 xsmall:w-full xsmall:text-[14px]">
-                    Na DNA Marketing, entendemos que o cenário digital de hoje está em constante evolução, trazendo
-                    tanto desafios quanto oportunidades para o seu negócio. Nossa missão é transformar esses desafios em
-                    oportunidades, empoderando sua marca a alcançar novos patamares.
-                </p>
-            </div>
+            <h2 class="text-center font-bold text-2xl uppercase mb-7">
+                Planos disponiveis
+            </h2>
 
-            <!-- Container Card -->
-            <div class="flex items-center justify-center gap-10 flex-wrap flex-row max-w-[1260px] mx-auto">
+            <div class="flex justify-center items-center flex-wrap gap-2 max-w-[1440px] w-full mx-auto">
+                <!-- Plano Basic -->
+                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
 
-                <!-- Card 1 -->
-                <div
-                    class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
-                    <div class="flex items-center relative justify-center">
+                    <h3 class="font-bold my-2">Basic</h3>
+                    <h4 class="font-bold text-3xl">R$ 10,00</h4>
+                    <P class="text-sm font-semibold">Mensal</P>
 
-                        <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-1">
-                            <img src="assets/icon-anuncio-pago.png" alt="" class="w-20 ">
-                        </figure>
-                        <h3 class="text-xl font-bold">
-                            Soluções Personalizadas para Seu Sucesso
-                        </h3>
-                    </div>
+                    <ul class="text-[#767676] text-sm my-4 space-y-1">
 
-                    <p class="font-poppins text-sm mt-10">
-                        Cada negócio é único, e é por isso que adotamos uma abordagem personalizada para cada um de
-                        nossos clientes. Nossa equipe de especialistas
-                        trabalha lado a lado com você para entender as especificidades
-                        do seu negócio, identificar suas necessidades exclusivas e desenvolver estratégias digitais sob
-                        medida que impulsionam resultados reais.
-                    </p>
+                        <li>Suporte 24/7</li>
+                        <li>2 E-mails</li>
+                        <li></li>
+
+                    </ul>
+
+                    <button class="
+                    bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
+                     active:scale-105  transition-button-hover">
+                        Adquirir
+                    </button>
                 </div>
+                <!-- Plano Pro -->
+                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
 
-                <!-- Card 2 -->
-                <div
-                    class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
+                    <h3 class="font-bold my-2">Pro</h3>
+                    <h4 class="font-bold text-3xl">R$ 50,00</h4>
+                    <P class="text-sm font-semibold">Mensal</P>
 
-                    <div class="flex items-center relative justify-center ">
+                    <ul class="text-[#767676] text-sm my-4 space-y-1">
 
-                        <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-2">
-                            <img src="assets/icon-inovacao.png" alt="" class="w-12 h-12 ">
-                        </figure>
+                        <li>Suporte 24/7</li>
+                        <li>2 E-mails</li>
+                        <li></li>
 
-                        <h3 class="text-xl font-bold">
-                            Inovação ao Seu Alcance
-                        </h3>
-                    </div>
-                    <p class="font-poppins text-sm mt-10">
-                        Manter-se à frente no mercado digital requer inovação constante. Nossa empresa está na vanguarda
-                        das últimas tendências e tecnologias em marketing
-                        digital, desde inteligência artificial até análise de dados avançada, garantindo que sua marca
-                        não apenas acompanhe, mas lidere em seu setor.
-                    </p>
+                    </ul>
+
+                    <button class="
+                    bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
+                     active:scale-105  transition-button-hover">
+                        Adquirir
+                    </button>
                 </div>
-                <!-- Card 3 -->
-                <div
-                    class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
-                    <div class="flex items-center relative justify-center">
+                <!-- Plano utimate -->
+                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
 
-                        <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-2">
-                            <img src="assets/icon-email-pago.png" alt="" class="w-12 h-12 ">
-                        </figure>
+                    <h3 class="font-bold my-2">Ultimate</h3>
+                    <h4 class="font-bold text-3xl">R$ 50,00</h4>
+                    <P class="text-sm font-semibold">Mensal</P>
 
-                        <h3 class="text-xl font-bold">
-                            Resultados que Falam por Si Mesmos
-                        </h3>
-                    </div>
-                    <p class="font-poppins text-sm mt-10">
-                        Nosso foco está nos resultados. Seja aumentando a visibilidade da sua marca, melhorando as taxas
-                        de conversão ou maximizando o ROI das suas campanhas de marketing digital, nosso objetivo é
-                        gerar impacto mensurável que contribua para o crescimento sustentável do seu negócio.
-                    </p>
+                    <ul class="text-[#767676] text-sm my-4 space-y-1">
+
+                        <li>Suporte 24/7</li>
+                        <li>2 E-mails</li>
+                        <li></li>
+
+                    </ul>
+
+                    <button class="
+                    bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
+                     active:scale-105  transition-button-hover">
+                        Adquirir
+                    </button>
                 </div>
-                <!-- Card 4 -->
-                <div
-                    class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
-                    <div class="flex items-center relative justify-center">
+                <!-- Plano 4 -->
+                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
 
-                        <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-2">
-                            <img src="assets/icon-suport.png" alt="" class="w-12 h-12 ">
-                        </figure>
+                    <h3 class="font-bold my-2">Mudar</h3>
+                    <h4 class="font-bold text-3xl">R$ 450,00</h4>
+                    <P class="text-sm font-semibold">Mensal</P>
 
-                        <h3 class="text-xl font-bold">
-                            Parceria e Suporte Contínuos
-                        </h3>
-                    </div>
-                    <p class="font-poppins text-sm mt-10">
-                        Consideramos nossos clientes como parceiros. Estamos comprometidos em fornecer não apenas
-                        soluções excepcionais, mas também suporte contínuo. Nossa equipe está sempre pronta para
-                        responder às suas perguntas, ajudá-lo a navegar por novos desafios e garantir que sua estratégia
-                        digital continue evoluindo junto com seu negócio.
-                    </p>
+                    <ul class="text-[#767676] text-sm my-4 space-y-1">
 
+                        <li>Suporte 24/7</li>
+                        <li>2 E-mails</li>
+                        <li></li>
+                    </ul>
+
+                    <button class="
+                    bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
+                     active:scale-105  transition-button-hover">
+                        Adquirir
+                    </button>
+                </div>
+                <!-- Plano 5 -->
+                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
+
+                    <h3 class="font-bold my-2">Mudar</h3>
+                    <h4 class="font-bold text-3xl">R$ 500,00</h4>
+                    <P class="text-sm font-semibold">Mensal</P>
+
+                    <ul class="text-[#767676] text-sm my-4 space-y-1">
+
+                        <li>Suporte 24/7</li>
+                        <li>2 E-mails</li>
+                        <li></li>
+
+                    </ul>
+
+                    <button class="
+                    bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
+                     active:scale-105  transition-button-hover">
+                        Adquirir
+                    </button>
                 </div>
             </div>
         </section>
 
 
         <section id="about">
-            <!-- Sobre Nos -->
-            <div class="w-3/4 mx-auto my-10 font-poppins xsmall:w-11/12 small:w-11/12">
-                <h2 class="uppercase text-center font-bold text-2xl xsmall:xl">
-                    Sobre nós
-                </h2>
 
-                <p class="my-5 text-justify leading-8">
-                    A Empresa denominada "DNA Markting Digital", é uma plataforma vibrante e inovadora projetada
-                    especificamente para o público jovem. Com uma
-                    abordagem moderna e uma estética atraente, a DNA Markting captura a essência da juventude e da
-                    inovação,
-                    oferecendo soluções de marketing digital que ressoam
-                    com as tendências atuais e as demandas desse público dinâmico.
-                </p>
-                <p class="my-5 text-justify leading-8">
-                    A DNA Markting se especializa em criar campanhas envolventes e conteúdo criativo que falam
-                    diretamente
-                    com a geração Z e os millennials, utilizando as últimas
-                    tecnologias e plataformas de mídia social para maximizar o impacto e a interação. Seus serviços
-                    incluem
-                    marketing de influência, gestão de mídias sociais, criação
-                    de conteúdo viral, SEO otimizado para a nova geração e estratégias publicitárias inovadoras que
-                    capturam
-                    a essência da marca de seus clientes, ao mesmo tempo em que
-                    engajam seu público-alvo jovem.
-                </p>
-                <p class="my-5 text-justify leading-8">
-                    Com uma equipe composta por jovens talentos que entendem profundamente a cultura digital e as
-                    nuances
-                    desse segmento demográfico, a DNA Markting posiciona-se como
-                    a escolha ideal para marcas que buscam rejuvenescer sua presença online e conectar-se autenticamente
-                    com
-                    o público jovem. A plataforma não apenas oferece estratégias
-                    de marketing de ponta, mas também se compromete a educar e inspirar seus clientes por meio de
-                    webinars,
-                    workshops e conteúdos interativos focados nas últimas tendências
-                    do marketing digital.
-                </p>
+            <!-- Pequeno texto sobre a empresa -->
+            <div class="flex items-center justify-center gap-4 mb-12 flex-wrap max-w-[1440px] w-full mx-auto">
+                <figure class="lg:w-6/12">
+                    <img 
+                    src="assets/icon-sbore2.png" 
+                    alt="Icon Banner da descrição da empresa"
+                        title="Icon Banner da descrição da empresa"
+                        class="lg:w-10/12">
+                </figure>
+
+                <div class="w-2/4 text-justify xsmall:w-11/12 small:w-11/12 md:w-10/12 lg:w-5/12">
+                    <h2 class="font-bold uppercase text-center mb-5 text-2xl" title="Quem somos">
+                        Quem Somos
+                    </h2>
+                    <P class="mb-3 leading-8" title="um breve resumo sobre a empresa">
+                        A DNA Markting se especializa em criar campanhas envolventes e conteúdo criativo que falam
+                        diretamente com
+                        a geração Z e os millennials, utilizando as últimas tecnologias e plataformas de mídia social
+                        para maximizar o
+                        impacto e a interação. Seus serviços incluem marketing de influência, gestão de mídias sociais,
+                        criação de conteúdo viral,
+                        SEO otimizado para a nova geração e estratégias publicitárias
+                        inovadoras que capturam a essência da marca de seus clientes, ao mesmo tempo em que engajam seu
+                        público-alvo jovem.
+                    </P>
+                    <P class="leading-8 mb-5">
+                        Compromete a educar e inspirar seus clientes por meio de webinars, workshops e conteúdos
+                        interativos focados nas últimas tendências do marketing digital.
+                    </P>
+                    <a href="About.html"
+                        class="bg-green-600 text-zinc-50 font-semibold py-1 px-4 rounded-xl active:scale-105"
+                        title="Botão ver mais.">Ver Mais...</a>
+                </div>
             </div>
+
         </section>
 
-        <section id="contact-form" class="bg-blue">
+
+        <section id="contact-form" class="bg-blue rounded-xl">
 
             <div
                 class="flex tems-center justify-center flex-col w-3/4 mx-auto text-zinc-50 py-3 small:w-11/12 xsmall:w-full">
@@ -387,46 +403,50 @@
                 </div>
 
                 <div>
-                    <form action="" method="post" class="flex flex-col">
+                    <form id="form" class="flex flex-col max-w-[1440px] mx-auto">
                         <!-- Input Nome -->
                         <div class="flex flex-col">
                             <label for="txnome" class="my-2">
                                 Nome:
                             </label>
-                            <input type="text" name="txnome" id="txnome"
-                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg"
-                                placeholder="Digite seu Nome" required>
+                            <input type="text" name="txnome" id="userName"
+                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
+                                placeholder="Digite seu Nome" >
+                                <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
                         </div>
                         <!-- Input Email -->
                         <div class="flex flex-col">
                             <label for="txemail" class="my-2">
                                 E-mail:
                             </label>
-                            <input type="email" name="txemail" id="txemail"
-                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg"
-                                placeholder="Digite seu E-mail" required>
+                            <input type="email" name="txemail" id="userEmail"
+                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
+                                placeholder="Digite seu E-mail" >
+                                <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
                         </div>
                         <!-- Input Telefone -->
                         <div class="flex flex-col">
                             <label for="txtel" class="my-2">
                                 Telefone:
                             </label>
-                            <input type="tel" name="txtel" id="txtel"
-                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg"
-                                placeholder="Digite o Número de telefone" required>
+                            <input type="tel" name="txtel" id="userPhone"
+                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
+                                placeholder="Digite o Número de telefone" >
+                                <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
                         </div>
                         <!-- Input Site ULR -->
                         <div class="flex flex-col">
                             <label for="txsite" class="my-2">
                                 Ulr Site:
                             </label>
-                            <input type="text" name="txsite" id="txsite"
-                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg"
-                                placeholder="Digite o link do Web Site (Opicional)">
+                            <input type="text" name="txsite" id="userWeb"
+                                class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
+                                placeholder="Digite o link do Web Site ( Opcional )">
+                                <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
                         </div>
 
                         <div class="my-7 mx-auto">
-                            <button class="bg-green-500 hover:bg-green-700 py-2 px-10 font-bold">
+                            <button id="btn-submit-form" type="submit" class="bg-green-500 hover:bg-green-700 py-2 px-10 font-bold">
                                 Enviar
                             </button>
                         </div>
@@ -443,7 +463,7 @@
     <footer class=" bg-blue text-zinc-50 font-poppins text-xs pt-10">
 
         <figure class="flex items-center justify-center mb-5">
-            <img src="assets/Frame 1.png" alt="" class="w-20">
+            <img src="assets/Frame 1.png" alt="" class="max-w-36 w-full ">
         </figure>
 
         <div
@@ -490,7 +510,8 @@
 
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+  
 </body>
 
 </html>
