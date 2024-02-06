@@ -49,6 +49,8 @@
                     },
                     colors: {
                         clifford: '#da373d',
+                        blueText: "0803FF",
+                        grayParagrafo: "#5B5F62"
                     },
                     fontFamily: {
                         'poppins': "'Poppins'"
@@ -62,110 +64,177 @@
 
 <body>
 
-    <header id="home" class="flex justify-around items-center py-3 shadow-lg shadow-zinc-100 small:relative">
-        <figure>
-            <img src="assets/logo.png" alt="" width="40px">
-        </figure>
-        <div class="md:hidden lg:hidden xl:hidden">
-            <button 
-            type="menu"
-            onclick="BtnClose()"
-            class=" rotate-90">|||</button>
-        </div>
-        <nav id="navBar"
-            class="small:absolute small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:absolute xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden">
+    <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
+        <div class="max-width-[1440px] flex justify-around items-center">
+            <figure>
+                <img src="assets/Frame 1.png" alt="" width="80px">
+            </figure>
 
-            <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden">
-                <button
-                 onclick="BtnClose()" 
-                 class="font-bold">
-                    x
+            <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
+
+                <button type="menu" onclick="BtnClose()">
+                    <!-- Svg menu hamburgue -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
                 </button>
+
             </div>
 
-            <ul
-            
-                class="flex justify-center items-center space-x-10 small:block small:h-screen small:text-center small:p-0 list-none small:space-y-4 xsmall:block xsmall:h-screen xsmall:text-center xsmall:p-0 list-none xsmall:space-y-4">
-                <li class="hover:text-zinc-300 " onclick="BtnClose()">
-                    <a href="#home" class="small:text-zinc-50 small:ml-5 xsmall:text-zinc-50 xsmall:ml-5">Home</a>
-                </li>
-                <li class="hover:text-zinc-300" onclick="BtnClose()">
-                    <a href="#about" class="small:text-zinc-50 xsmall:text-zinc-50">Quem Sobre</a>
-                </li>
-                <li class="hover:text-zinc-300" onclick="BtnClose()">
-                    <a href="#services" class="small:text-zinc-50 xsmall:text-zinc-50 ">Serviços</a>
-                </li>
-                <li class="hover:text-zinc-300" onclick="BtnClose()">
-                    <a href="#contact-form" class="small:text-zinc-50 xsmall:text-zinc-50 ">Contato</a>
-                </li>
-            </ul>
-        </nav>
+            <nav id="navBar"
+                class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
+
+                <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden 2xl:hidden">
+                    <button onclick="BtnClose()" class="font-bold">
+                        <!-- Botão com uma imagem de fundo para sair da tela do usuário -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </button>
+                </div>
+
+                <ul
+                    class="flex justify-center items-center space-x-10  small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
+                    <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                        onclick="BtnClose()">
+                        <a href="#plan"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            Planos</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                        onclick="BtnClose()">
+                        <a href="#about"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
+                            Quem Sobre</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                        onclick="BtnClose()">
+                        <a href="#services"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            Serviços</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                        onclick="BtnClose()">
+                        <a href="#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                            small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
+                            md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
+                             lg:bg-green-400 lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
+                             xl:bg-green-400 xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
+                             2xl:bg-green-400 2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
+                            Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
     <main>
 
-        <section id="banner" class="flex justify-around small:flex-col">
+        <section id="banner"
+            class="flex justify-around items-center small:flex-col h-screen xsmall:h-auto small:h-auto xsmall:flex-col-reverse small:flex-col-reverse md:flex-col-reverse md:h-auto 2xl:h-auto">
             <!-- Banner -->
-            <div class="font-poppins flex justify-center items-center flex-col gap-10 flex-col">
+            <div class="font-poppins flex justify-center items-center flex-col gap-5 ml-4 xsmall:ml-0 xmsall:gap-0">
 
-                <h1>Bem-vindo à DNA MARKETING DIGITAL</h1>
-                <p>Impulsionamos o seu negócio com estratégias digitais inovadoras e personalizadas.</p>
+                <h1
+                    class="font-bold text-5xl xsmall:text-2xl small:text-3xl xsmall:self-start small:self-start lg:text-4xl lg:self-start">
+                    Digital
+                    <span class="text-[#0803FF]">MARKETING</span>
+                    <br>
+                    DNA Marketing Digital
+                </h1>
+                <p class="xsmall:text-xs small:text-sm">Expanda seus negócios sem fronteiras, com Marketing Digital.</p>
+
+                <button class="bg-green-500 text-zinc-50 font-bold py-2 px-10 rounded-xl self-start">Planos</button>
             </div>
-            <figure>
-                <img src="assets/Banner.jpeg" alt="" width="100%">
+
+            <figure class="">
+                <img src="assets/banner-novo.png" alt="Banner DNA Marketing" title="Banner DNA Marketing"
+                    class="2xl:w-full">
             </figure>
 
         </section>
 
-        <section id="contact" class="flex justify-around items-center my-10 bg-blue text-zinc-50 py-10 font-poppins small:flex-col xsmall:flex-col md:flex-col">
-            <!-- Formulario -->
-            <div class="w-2/4 small:w-11/12 xsmall:w-11/12 md:w-10/12">
-                <h2 class="font-bold text-2xl uppercase text-center mb-10">
-                    Entrar em contato
+
+        <section id="services">
+            <!-- Titulo de Serviços -->
+            <div class="w-3/4 mx-auto mt-10 xsmall:w-full small:w-full md:w-11/12">
+                <h2 class="uppercase font-bold text-center mb-5 text-2xl">
+                    Serviços
                 </h2>
-                <p class="leading-8 small:text-[14px] small:text-center xsmall:text-[13px] xsmall:text-center md:text-[14px] md:text-center">
-                    Na DNA - Digital, estamos sempre prontos para ouvir suas necessidades e ajudá-lo a alcançar seus
-                    objetivos de marketing digital.
-                    Seja você uma startup ansiosa por fazer sua marca decolar, ou uma empresa estabelecida procurando
-                    inovar e expandir seu alcance online,
-                    nossa equipe está aqui para transformar suas ideias em realidade.
+                <h3 class="text-2xl text-center font-bold mb-5 small:text-lg xsmall:text-lg">
+                    O que podemos fornecer para o seu negócio
+                </h3>
+                <p
+                    class="text-center text-grayParagrafo text-base font-semibold text-center mb-10 xsmall:text-sm small:text-base">
+                    Estamos aqui para ajudar a sua empresa a alcançar novos patamares de sucesso digital! Seja você uma
+                    pequena empresa que está começando a explorar o mundo online ou uma grande corporação em busca de
+                    estratégias inovadoras, nossa equipe está pronta para oferecer soluções personalizadas que
+                    impulsionem o
+                    seu crescimento.
                 </p>
-            </div>
-            <div>
-                <form action="" method="post" class="w-96 small:w-60 xsmall:w-full ">
 
-                    <div class="flex flex-col py-3">
-                        <label for="txemail">
-                            Nome:
-                        </label>
-                        <input type="text" id="txemail" placeholder="Digite o seu Nome" title="Digite seu email aqui"
-                            class="p-2  text-zinc-900" required>
-                    </div>
-                    <div class="flex flex-col  py-3">
-                        <label for="txpassword">
-                            Telefone:
-                        </label>
-                        <input type="tel" id="txpassword" placeholder="Digite o sue Telefone"
-                            title="Digite seu Senha aqui" class="p-2 text-zinc-900" required>
-                    </div>
+                <!-- Card de serviços -->
+                <div class="flex items-center justify-center gap-5 flex-wrap">
 
-                    <!-- NÃO TEM AINDA O ENVIO DO FORM -->
-                    <button type="submit" class="py-2 px-4 bg-green-600 font-bold">
-                        Enviar
-                    </button>
-                </form>
-            </div>
+                    <div class="max-w-[280px] w-full flex flex-col items-center justify-center  hover:shadow-xl rounded-lg pb-2">
+                        <figure>
+                            <img src="assets/icon-marketing.png" alt="icon de marketing" title="icon de Marketing">
+                        </figure>
+                        <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
+                            DIGITAL MARKETING SPECIALIS
+                        </h4>
+                        <p class="text-grayParagrafo text-[14px] font-semibold text-center">
+                            Usar as mídias digitais como um esforço em marketing, publicidade e atividades promocionais
+                            para atingir os objetivos da empresa.
+                        </p>
+                    </div>
+                    <!-- Card WebSite -->
+                    <div class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
+                        <figure>
+                            <img src="assets/icon-dev.png" alt="icon de Dev" title="icon de Dev">
+                        </figure>
+                        <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
+                            WEBSITE DEVELOPMENT
+                        </h4>
+                        <p class="text-grayParagrafo text-[14px] font-semibold text-center">
+                            O processo de trabalho de desenvolvimento de um site simples ou complexo é dinâmico desde a
+                            fase de planejamento até a avaliação.
+                        </p>
+                    </div>
+                    <!-- Card Design -->
+                    <div class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
+                        <figure>
+                            <img src="assets/icon-design.png" alt="icon de Web Designer" title="icon de Web Designer">
+                        </figure>
+                        <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
+                            WEBSITE DESIGN
+                        </h4>
+                        <p class="text-grayParagrafo text-[14px] font-semibold text-center">
+                            Crie um site uma coleção de conteúdo online, incluindo documentos e aplicativos que residem
+                            em um servidor Web.
+                        </p>
+                    </div>
+                </div>
+
         </section>
 
 
-        <section id="services" class="my-10">
+
+        <section id="plan" class="my-20">
             <!-- Title e sobre titulo da pagina -->
             <div class="text-center">
                 <h2 class="font-bold text-2xl font-poppins md:text-xl small:text-xl xsmall:text-lg">
                     O Nosso Compromisso com Você
                 </h2>
 
-                <p class="w-3/4 mx-auto font-poppins mb-10 mt-4 md:w-11/12 md:text-[15px] small:text-[14px] small:w-11/12 xsmall:w-full xsmall:text-[14px]">
+                <p
+                    class="w-3/4 mx-auto font-poppins mb-10 mt-4 md:w-11/12 md:text-[15px] small:text-[14px] small:w-11/12 xsmall:w-full xsmall:text-[14px]">
                     Na DNA Marketing, entendemos que o cenário digital de hoje está em constante evolução, trazendo
                     tanto desafios quanto oportunidades para o seu negócio. Nossa missão é transformar esses desafios em
                     oportunidades, empoderando sua marca a alcançar novos patamares.
@@ -176,7 +245,8 @@
             <div class="flex items-center justify-center gap-10 flex-wrap flex-row max-w-[1260px] mx-auto">
 
                 <!-- Card 1 -->
-                <div class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full ">
+                <div
+                    class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
                     <div class="flex items-center relative justify-center">
 
                         <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-1">
@@ -197,7 +267,8 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
+                <div
+                    class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
 
                     <div class="flex items-center relative justify-center ">
 
@@ -217,7 +288,8 @@
                     </p>
                 </div>
                 <!-- Card 3 -->
-                <div class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
+                <div
+                    class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
                     <div class="flex items-center relative justify-center">
 
                         <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-2">
@@ -235,7 +307,8 @@
                     </p>
                 </div>
                 <!-- Card 4 -->
-                <div class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
+                <div
+                    class="w-[600px] h-[200px] bg-blue p-2 text-zinc-50 rounded-2xl relative xsmall:w-full small:w-full">
                     <div class="flex items-center relative justify-center">
 
                         <figure class="absolute -left-3 -top-3 bg-zinc-50 rounded-xl p-2">
@@ -302,7 +375,8 @@
 
         <section id="contact-form" class="bg-blue">
 
-            <div class="flex tems-center justify-center flex-col w-3/4 mx-auto text-zinc-50 py-3 small:w-11/12 xsmall:w-full">
+            <div
+                class="flex tems-center justify-center flex-col w-3/4 mx-auto text-zinc-50 py-3 small:w-11/12 xsmall:w-full">
                 <div class="text-center">
                     <h2 class="font-poppins font-bold text-2xl my-3 small:text-xl xsmall:text-lg">
                         Entrar em Contato
@@ -361,7 +435,7 @@
             </div>
         </section>
 
-        <section id="">
+        <section id="Testimonials">
             <h3 class="text-2xl font-bold text-center py-20">DEPOIMENTOS DE CLIENTES</h3>
         </section>
     </main>
@@ -369,10 +443,11 @@
     <footer class=" bg-blue text-zinc-50 font-poppins text-xs pt-10">
 
         <figure class="flex items-center justify-center mb-5">
-            <img src="assets/logo.png" alt="" class="w-10">
+            <img src="assets/Frame 1.png" alt="" class="w-20">
         </figure>
 
-        <div class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10">
+        <div
+            class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10">
             <div>
                 <ul class="">
                     <h3 class="font-bold text-xl">
@@ -419,9 +494,3 @@
 </body>
 
 </html>
-
-
-<!-- 
-
-    Fundada em 2000, A DNA MARKETING DIGITAL é especialista em soluções digitais para todo tipo de negócio , 
- -->
