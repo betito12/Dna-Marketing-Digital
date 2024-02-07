@@ -1,4 +1,3 @@
-
 // Pegando os campos do formulario do site
 const form = document.getElementById("form")
 const userName = document.getElementById("userName")
@@ -7,7 +6,6 @@ const userPhone = document.getElementById("userPhone")
 const userWeb = document.getElementById("userWeb")
 const btnForm = document.getElementById("btn-submit-form")
 const navBar = document.getElementById("navBar")
-
 
 //menu mobile
 function BtnClose() {
@@ -20,9 +18,7 @@ function BtnClose() {
         navBar.classList.add("small:hidden")
         navBar.classList.add("xsmall:hidden")
     }
-
 }
-
 //validar nome 
 function checkInputUsername() {
     const usernameValue = userName.value;
@@ -47,7 +43,6 @@ function checkInputEmail() {
     const ValidationExpressionEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     const emailValue = userEmail.value;
 
-
     if (emailValue === "") {
 
         errorAlert(userEmail, "O email é obrigatório.");
@@ -60,59 +55,40 @@ function checkInputEmail() {
         const formItem = userEmail.parentElement;
         formItem.className = "form-content";
     }
-
-
 }
-
-// else if(!ValidationExpressionPhone.test(Phone)){
-
-//     errorAlert(userPhone, "Digite um Número de Telefone Valido!");
-// }
-
 //Validar telefone celular
-
 function checkInputPhone() {
 
     const Phone = userPhone.value;
-    //Expreção ainda não funciona
-    //const ValidationExpressionPhone = /\([0-9]{2}\)\-[0-9]{8,9}/
+    const ValidationExpressionPhone = /^1\d\d(\d\d)?$|^0800 ?\d{3} ?\d{4}$|^(\(0?([1-9a-zA-Z][0-9a-zA-Z])?[1-9]\d\) ?|0?([1-9a-zA-Z][0-9a-zA-Z])?[1-9]\d[ .-]?)?(9|9[ .-])?[2-9]\d{3}[ .-]?\d{4}$/
 
     if (Phone === "") {
 
         errorAlert(userPhone, "O Número de Telefone é obrigatório.");
-    } //else if (!ValidationExpressionPhone.test(Phone)) {
+    } else if (!ValidationExpressionPhone.test(Phone)) {
 
-    // errorAlert(userPhone, "Digite um Número de Telefone Valido!");
-    // }
+        errorAlert(userPhone, "Digite um Número de Telefone Valido!");
 
-    else if (Phone.length < 11) {
-        errorAlert(userPhone, "Digite um Número de Telefone com DDD!");
     } else {
 
         const formItem = userPhone.parentElement;
         formItem.className = "form-content";
     }
 }
-
-
-
-
 //Mandar mensagem de erro para o usuário
 function errorAlert(input, message) {
     const formItem = input.parentElement;
     const textMessage = formItem.querySelector("p")
 
     textMessage.innerText = message;
-
     formItem.className = "form-content error"
-
 }
-
 //Validar o formulario na hora do envio
 function checkForm() {
 
     checkInputUsername();
     checkInputEmail();
+    checkInputPhone();
 
     const formItems = form.querySelectorAll(".form-content");
 
@@ -121,20 +97,43 @@ function checkForm() {
     });
 
     if (isValid) {
-        alert("ENVIADO COM SUCESSO!");
-    }
 
+        HandlerFormContact();
+        Swal.fire({
+            title: 'Sucesso!',
+            text: 'Envia com sucesso',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        })
+    }
+}
+//Enviar formulario para o whasApp
+function HandlerFormContact() {
+
+    const { value } = userWeb;
+    const ValidUrlValue = value.length < 1 ? "Não possui um site" : value;
+    const EndPoint = `https://api.whatsapp.com/send/?phone=949208086&text=Nome+Da+Pessoa:+${userName.value}%0AE-mail:+${userEmail.value}%0ATelefone:+${userPhone.value}%0AWebSite:+${ValidUrlValue}`
+    window.open(EndPoint);
+    cleanInput();
+}
+//Limpar o formulario
+function cleanInput() {
+    userEmail.value = ""
+    userName.value = ""
+    userPhone.value = ""
+    userWeb.value = ""
 }
 
+//Enviar plano via WhasApp
+function HandlerPlanContact(plan){
 
-
-
-
+    const EndPoint = `https://api.whatsapp.com/send/?phone=949208086&text=Quero+Adquirir+o+Plano:+${plan}`;
+    window.open(EndPoint);
+}
 //Event Dom
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     checkForm();
-
 });
 userName.addEventListener("blur", () => {
     checkInputUsername();
@@ -147,3 +146,5 @@ userEmail.addEventListener("blur", () => {
 userPhone.addEventListener("blur", () => {
     checkInputPhone()
 })
+
+

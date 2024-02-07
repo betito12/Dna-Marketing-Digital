@@ -15,7 +15,7 @@
 
     <!-- meta tag robots, ela se refere ao navegador e específica se será visivel a pagina ou não ou se pode usar um link de referencia dentro da pagina-->
     <meta name="robots" content="index follow" />
-
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
     <!-- Link da font de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +46,6 @@
                 extend: {
                     backgroundColor: {
                         blue: "#152ec0",
-                        blueorigin: "#1B263B"
                     },
                     colors: {
                         clifford: '#da373d',
@@ -61,22 +60,24 @@
             }
         }
     </script>
+    <script src="//code.jivosite.com/widget/R7oc72HXBU" async></script>
+
 </head>
 
 <body>
 
     <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
-        <div class="max-width-[1440px] flex justify-around items-center">
+        <div class="max-width-[1440px] flex justify-around items-center max-w-[1440px] mx-auto">
             <figure>
                 <a href="index.html">
-                    <img src="assets/Frame 1.png" alt="Logo da Empresa DNA Marketing" width="80px"
+                    <img src="assets/Frame 1.png" alt="Logo da Empresa DNA Marketing" width="90px"
                         title="Logo da Empresa DNA Marketing">
                 </a>
             </figure>
 
             <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
 
-                <button type="menu" onclick="BtnClose()">
+                <button type="button" onclick="BtnClose()" title="Menu">
                     <!-- Svg menu hamburgue -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-list" viewBox="0 0 16 16">
@@ -91,7 +92,7 @@
                 class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
 
                 <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden 2xl:hidden">
-                    <button onclick="BtnClose()" class="font-bold">
+                    <button type="button" onclick="BtnClose()" title="Fechar menu">
                         <!-- Botão com uma imagem de fundo para sair da tela do usuário -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-x-circle" viewBox="0 0 16 16">
@@ -106,25 +107,25 @@
                     class="flex justify-center items-center space-x-10  small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
                     <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
                         onclick="BtnClose()">
-                        <a href="#plan"
+                        <a title="Planos" href="#plan"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Planos</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
                         onclick="BtnClose()">
-                        <a href="#about"
+                        <a title="Quem Somos" href="#about"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
                             Quem Somos</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
                         onclick="BtnClose()">
-                        <a href="#services"
+                        <a href="#services" title="serviços"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Serviços</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
                         onclick="BtnClose()">
-                        <a href="#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                        <a title="Botão Contato" href="#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
                             small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
                             md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
                              lg:bg-green-400 lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
@@ -141,26 +142,26 @@
     <main>
 
         <section id="banner"
-            class="flex justify-around items-center small:flex-col h-screen xsmall:h-auto small:h-auto xsmall:flex-col-reverse small:flex-col-reverse md:flex-col-reverse md:h-auto 2xl:h-auto">
+            class="flex justify-around items-center small:flex-col min-h-[50vh] pt-2 xsmall:h-auto small:h-auto xsmall:flex-col-reverse small:flex-col-reverse md:flex-col-reverse md:h-auto max-w-[1440px] mx-auto">
             <!-- Banner -->
             <div class="font-poppins flex justify-center items-center flex-col gap-5 ml-4 xsmall:ml-0 xmsall:gap-0">
 
-                <h1
-                    class="font-bold text-5xl xsmall:text-2xl small:text-3xl xsmall:self-start small:self-start lg:text-4xl lg:self-start">
+                <h1 class="font-bold text-5xl xsmall:text-2xl small:text-3xl lg:text-4xl lg:self-start">
                     Digital
                     <span class="text-[#0803FF]">MARKETING</span>
                     <br>
                     DNA Marketing Digital
                 </h1>
-                <p class="xsmall:text-xs small:text-sm">Expanda seus negócios sem fronteiras, com Marketing Digital.</p>
+                <p class="xsmall:text-xs small:text-sm xsmall:text-center">Expanda seus negócios sem fronteiras, com
+                    Marketing Digital.</p>
 
-                <a href="#plan"
-                    class="bg-green-500 text-zinc-50 font-bold py-2 px-10 rounded-xl self-start active:scale-105">Planos</a>
+                <a title="Planos" href="#plan"
+                    class="bg-green-500 text-zinc-50 font-bold py-2 px-5 text-center rounded-xl self-start active:scale-105 xsmall:mx-auto">Planos</a>
             </div>
 
             <figure class="">
-                <img src="assets/banner-novo.png" alt="Banner DNA Marketing" title="Banner DNA Marketing"
-                    class="2xl:w-full">
+                <img src="assets/banner-test-2.png" alt="Banner DNA Marketing" title="Banner DNA Marketing"
+                    class="w-11/12 mx-auto">
             </figure>
 
         </section>
@@ -185,6 +186,7 @@
                 </p>
 
                 <!-- Card de serviços -->
+                <!-- Refaturar trocar a div por uma lista não ordenada -->
                 <div class="flex items-center justify-center gap-5 flex-wrap">
 
                     <div
@@ -204,7 +206,7 @@
                     <div
                         class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
                         <figure>
-                            <img src="assets/icon-dev.png" alt="icon de Dev" title="icon de Dev">
+                            <img src="assets/icon-dev.png" alt="icon de Dev" title="icon de Development">
                         </figure>
                         <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
                             WEBSITE DEVELOPMENT
@@ -252,13 +254,13 @@
 
                         <li>Suporte 24/7</li>
                         <li>2 E-mails</li>
-                        <li></li>
+
 
                     </ul>
 
-                    <button class="
+                    <button title="Adquira nossos planos" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
-                     active:scale-105  transition-button-hover">
+                     active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Basic')">
                         Adquirir
                     </button>
                 </div>
@@ -273,13 +275,13 @@
 
                         <li>Suporte 24/7</li>
                         <li>2 E-mails</li>
-                        <li></li>
+
 
                     </ul>
 
-                    <button class="
+                    <button title="Adquira nossos planos" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
-                     active:scale-105  transition-button-hover">
+                     active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Pro')">
                         Adquirir
                     </button>
                 </div>
@@ -294,13 +296,13 @@
 
                         <li>Suporte 24/7</li>
                         <li>2 E-mails</li>
-                        <li></li>
+
 
                     </ul>
 
-                    <button class="
+                    <button title="Adquira nossos planos" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
-                     active:scale-105  transition-button-hover">
+                     active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Ultimate')">
                         Adquirir
                     </button>
                 </div>
@@ -315,12 +317,12 @@
 
                         <li>Suporte 24/7</li>
                         <li>2 E-mails</li>
-                        <li></li>
+
                     </ul>
 
-                    <button class="
+                    <button title="Adquira nossos planos" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
-                     active:scale-105  transition-button-hover">
+                     active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Mudar')">
                         Adquirir
                     </button>
                 </div>
@@ -335,30 +337,25 @@
 
                         <li>Suporte 24/7</li>
                         <li>2 E-mails</li>
-                        <li></li>
+
 
                     </ul>
 
-                    <button class="
+                    <button title="Adquira nossos planos" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
-                     active:scale-105  transition-button-hover">
+                     active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Mudar')">
                         Adquirir
                     </button>
                 </div>
             </div>
         </section>
 
-
         <section id="about">
-
             <!-- Pequeno texto sobre a empresa -->
             <div class="flex items-center justify-center gap-4 mb-12 flex-wrap max-w-[1440px] w-full mx-auto">
                 <figure class="lg:w-6/12">
-                    <img 
-                    src="assets/icon-sbore2.png" 
-                    alt="Icon Banner da descrição da empresa"
-                        title="Icon Banner da descrição da empresa"
-                        class="lg:w-10/12">
+                    <img src="assets/icon-sbore.png" alt="Icon Banner da descrição da empresa"
+                        title="Icon Banner da descrição da empresa" class="lg:w-10/12">
                 </figure>
 
                 <div class="w-2/4 text-justify xsmall:w-11/12 small:w-11/12 md:w-10/12 lg:w-5/12">
@@ -382,23 +379,25 @@
                     </P>
                     <a href="About.html"
                         class="bg-green-600 text-zinc-50 font-semibold py-1 px-4 rounded-xl active:scale-105"
-                        title="Botão ver mais.">Ver Mais...</a>
+                        title="Botão ver mais.">
+                        Ver Mais...
+                    </a>
                 </div>
             </div>
 
         </section>
 
 
-        <section id="contact-form" class="bg-blue rounded-xl">
-
+        <section id="contact-form" class="gradient-Global rounded-t-3xl">
             <div
                 class="flex tems-center justify-center flex-col w-3/4 mx-auto text-zinc-50 py-3 small:w-11/12 xsmall:w-full">
                 <div class="text-center">
                     <h2 class="font-poppins font-bold text-2xl my-3 small:text-xl xsmall:text-lg">
                         Entrar em Contato
                     </h2>
-                    <p class="font-poppins text-[16px] xsmall:text-[13px] small:text-[14px]">
-                        Após o envio do formulario entraremos em contato dentro de 30 minutos.
+                    <p class="font-poppins text-[16px] xsmall:text-[13px] small:text-[14px] mb-7">
+                        Após o envio do formulario Você será redirecionado para o WhasApp, E no WhasApp entramos em
+                        contato com o Senhor(a).
                     </p>
                 </div>
 
@@ -406,47 +405,53 @@
                     <form id="form" class="flex flex-col max-w-[1440px] mx-auto">
                         <!-- Input Nome -->
                         <div class="flex flex-col">
-                            <label for="txnome" class="my-2">
+                            <label for="userName" title="Digite seu Nome" class="my-2">
                                 Nome:
                             </label>
-                            <input type="text" name="txnome" id="userName"
+                            <input type="text" name="userName" id="userName" title="Digite seu Nome"
                                 class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
-                                placeholder="Digite seu Nome" >
-                                <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
+                                placeholder="Digite seu Nome" autocomplete="email">
+
+                            <p class="text-[#ff3b25] invisible"> Mensagem De Erro.... </p>
+
                         </div>
                         <!-- Input Email -->
                         <div class="flex flex-col">
-                            <label for="txemail" class="my-2">
+                            <label for="userEmail" class="my-2">
                                 E-mail:
                             </label>
-                            <input type="email" name="txemail" id="userEmail"
+                            <input type="email" name="userEmail" id="userEmail" title="Digite seu E-mail"
                                 class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
-                                placeholder="Digite seu E-mail" >
-                                <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
+                                placeholder="Digite seu E-mail" autocomplete="email">
+                            <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
                         </div>
                         <!-- Input Telefone -->
                         <div class="flex flex-col">
-                            <label for="txtel" class="my-2">
-                                Telefone:
+                            <label for="userPhone" class="my-2">
+                                Telefone (Cel):
                             </label>
-                            <input type="tel" name="txtel" id="userPhone"
+                            <input type="tel" name="userPhone" id="userPhone" title="Digite seu Número de Celular"
                                 class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
-                                placeholder="Digite o Número de telefone" >
-                                <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
+                                placeholder="Digite o Número de telefone" autocomplete="tel">
+                            <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
                         </div>
                         <!-- Input Site ULR -->
                         <div class="flex flex-col">
-                            <label for="txsite" class="my-2">
+                            <label for="userWeb" class="my-2">
                                 Ulr Site:
                             </label>
-                            <input type="text" name="txsite" id="userWeb"
+                            <input type="text" name="userWeb" id="userWeb" title="Digite a URL do seu site ( opcional )"
                                 class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
-                                placeholder="Digite o link do Web Site ( Opcional )">
-                                <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
+                                placeholder="Digite o link do Web Site ( Opcional )" autocomplete="url">
+                            <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
                         </div>
 
                         <div class="my-7 mx-auto">
-                            <button id="btn-submit-form" type="submit" class="bg-green-500 hover:bg-green-700 py-2 px-10 font-bold">
+                            <button 
+                            title="Enviar o formulario"
+                            id="btn-submit-form"
+                             type="submit"
+                                class="bg-green-500 hover:bg-green-600 py-2 px-10 font-bold rounded-lg active:scale-105">
                                 Enviar
                             </button>
                         </div>
@@ -454,30 +459,29 @@
                 </div>
             </div>
         </section>
-
-        <section id="Testimonials">
-            <h3 class="text-2xl font-bold text-center py-20">DEPOIMENTOS DE CLIENTES</h3>
-        </section>
     </main>
 
-    <footer class=" bg-blue text-zinc-50 font-poppins text-xs pt-10">
+    <footer class="gradient-Global text-zinc-50 font-poppins text-xs pt-10">
 
         <figure class="flex items-center justify-center mb-5">
-            <img src="assets/Frame 1.png" alt="" class="max-w-36 w-full ">
+            <img src="assets/Frame 1.png" alt="Logo da Empresa" class="max-w-36 w-full" title="Logo da Empresa Dna Marketing">
         </figure>
 
         <div
-            class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10">
+            class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10 max-w-[1440px] mx-auto">
             <div>
-                <ul class="">
-                    <h3 class="font-bold text-xl">
-                        Redes Sociais
-                    </h3>
+                <ul>
+                    <li>
+                        <h3 class="font-bold text-xl">
+                            Redes Sociais
+                        </h3>
+                    </li>
+
                     <li>
                         <figure class="flex space-x-4 mt-4">
-                            <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10">
-                            <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" class="w-10">
-                            <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" class="w-10">
+                            <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10" title="Rede Social Fecebook">
+                            <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" class="w-10" title="Rede Social Linkeding">
+                            <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" class="w-10" title="Rede Social WhatsApp">
 
                         </figure>
                     </li>
@@ -486,9 +490,12 @@
 
             <div class=" text-center">
                 <ul class="space-y-2">
-                    <h3 class="font-bold text-2xl">
-                        Empresa
-                    </h3>
+                    <li>
+                        <h3 class="font-bold text-2xl">
+                            Empresa
+                        </h3>
+                    </li>
+
                     <li>
                         <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8">Local: R. Viçosa do Ceará </a>
                     </li>
@@ -504,14 +511,29 @@
 
         <div class="flex items-center justify-center">
             <p class="text-[10px] xsmall:text-[8px]">
-                &copy; 2024 DNA MARKETINGDIGITAL. Todos os direitos reservados.
+                &copy; 2024 DNA MARKETING DIGITAL. Todos os direitos reservados.
             </p>
         </div>
 
     </footer>
 
     <script src="js/index.js"></script>
-  
+    <!-- Import jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Lib Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+        integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        $('#userPhone').mask('(00) 00000-0000');
+    </script>
+
 </body>
 
 </html>

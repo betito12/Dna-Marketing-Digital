@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DNA Marketing - Sobre</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
 
     <!-- Link da font de texto -->
@@ -13,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
 
     <script>
         tailwind.config = {
@@ -29,7 +32,7 @@
 
                 extend: {
                     backgroundColor: {
-                        blue: "#1B263B"
+                        blue: "#152ec0"
                     },
                     colors: {
                         clifford: '#da373d',
@@ -44,22 +47,23 @@
             }
         }
     </script>
+    <script src="//code.jivosite.com/widget/R7oc72HXBU" async></script>
 
 </head>
 
 <body>
 
     <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
-        <div class="max-width-[1440px] flex justify-around items-center">
+        <div class="max-w-[1440px] mx-auto flex justify-around items-center">
             <figure>
-              <a href="index.html"> 
-                <img src="assets/Frame 1.png" alt="" width="80px">
-            </a>
+                <a href="index.html" title="Logo da pagina">
+                    <img src="assets/Frame 1.png" alt="" width="90px">
+                </a>
             </figure>
 
             <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
 
-                <button type="menu" onclick="BtnClose()">
+                <button type="button" onclick="BtnClose()" title="Abrir Menu">
                     <!-- Svg menu hamburgue -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-list" viewBox="0 0 16 16">
@@ -70,11 +74,11 @@
 
             </div>
 
-            <nav id="navBar"
+            <nav id="navBar-about"
                 class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
 
                 <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden 2xl:hidden">
-                    <button onclick="BtnClose()" class="font-bold">
+                    <button type="button" onclick="BtnClose()" class="font-bold" title="Fechar menu">
                         <!-- Botão com uma imagem de fundo para sair da tela do usuário -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-x-circle" viewBox="0 0 16 16">
@@ -89,25 +93,25 @@
                     class="flex justify-center items-center space-x-10  small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
                     <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
                         onclick="BtnClose()">
-                        <a href="index.html#plan"
+                        <a href="index.html#plan" title="Sessão planos da pagina"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Planos</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
                         onclick="BtnClose()">
-                        <a href="index.html#about"
+                        <a href="index.html#about" title="Sessão planos da pagina"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
                             Quem Sobre</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
                         onclick="BtnClose()">
-                        <a href="index.html#services"
+                        <a href="index.html#services" title="Sessão Serviços da pagina"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Serviços</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
                         onclick="BtnClose()">
-                        <a href="index.html#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                        <a title="Sessão contato da pagina" href="index.html#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
                             small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
                             md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
                              lg:bg-green-400 lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
@@ -124,7 +128,7 @@
     <!-- Texto completo sobre a empresa -->
     <section id="about">
         <!-- Sobre Nos -->
-        <div class="w-3/4 mx-auto my-10 font-poppins xsmall:w-11/12 small:w-11/12">
+        <div class="w-3/4 mx-auto my-10 font-poppins xsmall:w-11/12 small:w-11/12 max-w-[1440px] mx-auto">
             <h2 class="uppercase text-center font-bold text-2xl xsmall:xl">
                 Sobre nós
             </h2>
@@ -165,19 +169,22 @@
     </section>
 
 
-    <footer class=" bg-blue text-zinc-50 font-poppins text-xs pt-10">
+    <footer class="gradient-Global text-zinc-50 font-poppins text-xs pt-10 ">
 
         <figure class="flex items-center justify-center mb-5">
-            <img src="assets/Frame 1.png" alt="" class="w-20">
+            <img src="assets/Frame 1.png" alt="" class="max-w-36 w-full">
         </figure>
 
         <div
-            class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10">
+            class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10 max-w-[1440px] mx-auto">
             <div>
                 <ul class="">
-                    <h3 class="font-bold text-xl">
-                        Redes Sociais
-                    </h3>
+                    <li>
+                        <h3 class="font-bold text-xl">
+                            Redes Sociais
+                        </h3>
+                    </li>
+
                     <li>
                         <figure class="flex space-x-4 mt-4">
                             <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10">
@@ -191,9 +198,11 @@
 
             <div class=" text-center">
                 <ul class="space-y-2">
-                    <h3 class="font-bold text-2xl">
-                        Empresa
-                    </h3>
+                    <li>
+                        <h3 class="font-bold text-2xl">
+                            Empresa
+                        </h3>
+                    </li>
                     <li>
                         <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8">Local: R. Viçosa do Ceará </a>
                     </li>
@@ -209,14 +218,14 @@
 
         <div class="flex items-center justify-center">
             <p class="text-[10px] xsmall:text-[8px]">
-                &copy; 2024 DNA MARKETINGDIGITAL. Todos os direitos reservados.
+                &copy; 2024 DNA MARKETING DIGITAL. Todos os direitos reservados.
             </p>
         </div>
 
     </footer>
 
 
-    <script src="js/main.js"></script>
+    <script src="js/About.js"></script>
 
 </body>
 

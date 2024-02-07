@@ -3,19 +3,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* .container-banner{
-    background: url("../assets/Banner.jpeg");
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
-
-/* #banner{
-    height: 100vh;
-    width: 100%;
-    background: url("../assets/DALL·E-2024-02-05-09.22.12-Design-a-sleek-and-modern-icon-for-a-digital-marketing-banner.jpg") no-repeat center;
-    background-size: cover;
-} */
-
 .Btn-Contact{
     background: rgb(9, 240, 82);
     color: white;
@@ -27,9 +14,7 @@ html{
     background: linear-gradient(to right, #008cf0, rgb(207, 135, 3));
 }
 
-.bg-blue{
-    /* background-image: linear-gradient(to right, #6d9eec, #4f84e5, #3369dc, #1d4dcf, #152ec0);
-     */
+.gradient-Global{
      background-image: linear-gradient(to right, #6d9eec, #508bef, #3276f0, #1460ee, #0248e9);
 }
 .form-content{
