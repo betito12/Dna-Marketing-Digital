@@ -112,7 +112,7 @@ function HandlerFormContact() {
 
     const { value } = userWeb;
     const ValidUrlValue = value.length < 1 ? "Não possui um site" : value;
-    const EndPoint = `https://api.whatsapp.com/send/?phone=949208086&text=Nome+Da+Pessoa:+${userName.value}%0AE-mail:+${userEmail.value}%0ATelefone:+${userPhone.value}%0AWebSite:+${ValidUrlValue}`
+    const EndPoint = `https://api.whatsapp.com/send/?phone=71996193437&text=Nome+Da+Pessoa:+${userName.value}%0AE-mail:+${userEmail.value}%0ATelefone:+${userPhone.value}%0AWebSite:+${ValidUrlValue}`
     window.open(EndPoint);
     cleanInput();
 }
@@ -127,7 +127,7 @@ function cleanInput() {
 //Enviar plano via WhasApp
 function HandlerPlanContact(plan){
 
-    const EndPoint = `https://api.whatsapp.com/send/?phone=949208086&text=Quero+Adquirir+o+Plano:+${plan}`;
+    const EndPoint = `https://api.whatsapp.com/send/?phone=71996193437&text=Quero+Adquirir+o+Plano:+${plan}`;
     window.open(EndPoint);
 }
 //Event Dom
