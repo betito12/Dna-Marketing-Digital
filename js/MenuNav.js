@@ -1,4 +1,4 @@
-const navBar = document.getElementById("navBar-about")
+const navBar = document.getElementById("navBar")
 
 //menu mobile
 function BtnClose() {

@@ -1,27 +1,11 @@
+html{   scroll-behavior: smooth;   overflow-x: hidden;}
 
-html{
-    scroll-behavior: smooth;
-}
+.Btn-Contact{   background: rgb(9, 240, 82);  color: white;}
 
-.Btn-Contact{
-    background: rgb(9, 240, 82);
-    color: white;
-    
+.transition-button-hover:hover{   background: linear-gradient(to right, #008cf0, rgb(207, 135, 3));}
 
-}
-.transition-button-hover:hover{
+.gradient-Global{    background-image: linear-gradient(to right, #6d9eec, #508bef, #3276f0, #1460ee, #0248e9);}
 
-    background: linear-gradient(to right, #008cf0, rgb(207, 135, 3));
-}
+.form-content{   display: flex;    flex-direction: column; }
 
-.gradient-Global{
-     background-image: linear-gradient(to right, #6d9eec, #508bef, #3276f0, #1460ee, #0248e9);
-}
-.form-content{
-    display: flex;
-    flex-direction: column;
-}
-.form-content.error p{
-    color: #ff3b25;
-    visibility: visible;
-  }
+.form-content.error p{  color: #ff3b25;   visibility: visible;}

@@ -7,7 +7,7 @@ const userWeb = document.getElementById("userWeb")
 const btnForm = document.getElementById("btn-submit-form")
 const navBar = document.getElementById("navBar")
 
-//menu mobile
+// //menu mobile
 function BtnClose() {
 
     if (navBar.classList.contains("small:hidden") || navBar.classList.contains("xsmall:hidden")) {
@@ -100,8 +100,8 @@ function checkForm() {
 
         HandlerFormContact();
         Swal.fire({
-            title: 'Sucesso!',
-            text: 'Envia com sucesso',
+            title: 'Formulário enviado!',
+            text: 'Você será redirecionado para o whatsApp.',
             icon: 'success',
             confirmButtonText: 'OK'
         })
@@ -125,7 +125,7 @@ function cleanInput() {
 }
 
 //Enviar plano via WhasApp
-function HandlerPlanContact(plan){
+function HandlerPlanContact(plan) {
 
     const EndPoint = `https://api.whatsapp.com/send/?phone=71996193437&text=Quero+Adquirir+o+Plano:+${plan}`;
     window.open(EndPoint);

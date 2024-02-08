@@ -29,6 +29,26 @@
     <title>DNA - Marketing Digital</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/index.js" defer></script>
+    <!-- Import jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Lib Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+        integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Config lib -->
+    <script src="js/Reval.js" defer></script>
+    <!-- Chat -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $('#userPhone').mask('(00) 00000-0000');
+    </script>
 
     <script>
         tailwind.config = {
@@ -46,6 +66,7 @@
                 extend: {
                     backgroundColor: {
                         blue: "#152ec0",
+                        white: "#fff"
                     },
                     colors: {
                         clifford: '#da373d',
@@ -142,9 +163,10 @@
     <main>
 
         <section id="banner"
-            class="flex justify-around items-center small:flex-col min-h-[50vh] pt-2 xsmall:h-auto small:h-auto xsmall:flex-col-reverse small:flex-col-reverse md:flex-col-reverse md:h-auto max-w-[1440px] mx-auto">
+            class="flex justify-around items-center small:flex-col min-h-[30vh] pt-2 xsmall:h-auto small:h-auto xsmall:flex-col-reverse small:flex-col-reverse md:flex-col-reverse md:h-auto max-w-[1440px] mx-auto">
             <!-- Banner -->
-            <div class="font-poppins flex justify-center items-center flex-col gap-5 ml-4 xsmall:ml-0 xmsall:gap-0">
+            <div
+                class="font-poppins flex justify-center items-center flex-col gap-5 ml-4 xsmall:ml-0 xmsall:gap-0 effect-description-banner">
 
                 <h1 class="font-bold text-5xl xsmall:text-2xl small:text-3xl lg:text-4xl lg:self-start">
                     Digital
@@ -159,9 +181,14 @@
                     class="bg-green-500 text-zinc-50 font-bold py-2 px-5 text-center rounded-xl self-start active:scale-105 xsmall:mx-auto">Planos</a>
             </div>
 
-            <figure class="">
+            <figure class="efect-img-banner">
                 <img src="assets/banner-test-2.png" alt="Banner DNA Marketing" title="Banner DNA Marketing"
                     class="w-11/12 mx-auto">
+                <figcaption class="text-[7px] text-center">
+                    Ícone criado por
+                    <a href="https://www.figma.com/@sablaniya?fuid=1335218620605546508">@sablaniya</a>
+                    do Autor sob licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+                </figcaption>
             </figure>
 
         </section>
@@ -169,33 +196,44 @@
 
         <section id="services">
             <!-- Titulo de Serviços -->
-            <div class="w-3/4 mx-auto mt-10 xsmall:w-full small:w-full md:w-11/12 max-w-[1440px] mx-auto">
-                <h2 class="uppercase font-bold text-center mb-5 text-2xl">
-                    Serviços
-                </h2>
-                <h3 class="text-2xl text-center font-bold mb-5 small:text-lg xsmall:text-lg">
-                    O que podemos fornecer para o seu negócio
-                </h3>
-                <p
-                    class="text-center text-grayParagrafo text-base font-semibold text-center mb-10 xsmall:text-sm small:text-base">
-                    Estamos aqui para ajudar a sua empresa a alcançar novos patamares de sucesso digital! Seja você uma
-                    pequena empresa que está começando a explorar o mundo online ou uma grande corporação em busca de
-                    estratégias inovadoras, nossa equipe está pronta para oferecer soluções personalizadas que
-                    impulsionem o
-                    seu crescimento.
-                </p>
+            <div class="w-3/4 mx-auto mt-10 xsmall:w-full small:w-full md:w-11/12 max-w-[1440px] mx-auto ">
+                <div class="effect-serves-description">
+                    <h2 class="uppercase font-bold text-center mb-5 text-2xl ">
+                        Serviços
+                    </h2>
+                    <h3 class="text-2xl text-center font-bold mb-5 small:text-lg xsmall:text-lg">
+                        O que podemos fornecer para o seu negócio
+                    </h3>
+                    <p
+                        class="text-center text-grayParagrafo text-base font-semibold text-center mb-10 xsmall:text-sm small:text-base">
+                        Estamos aqui para ajudar a sua empresa a alcançar novos patamares de sucesso digital! Seja você
+                        uma
+                        pequena empresa que está começando a explorar o mundo online ou uma grande corporação em busca
+                        de
+                        estratégias inovadoras, nossa equipe está pronta para oferecer soluções personalizadas que
+                        impulsionem o
+                        seu crescimento.
+                    </p>
+
+                </div>
 
                 <!-- Card de serviços -->
                 <!-- Refaturar trocar a div por uma lista não ordenada -->
                 <div class="flex items-center justify-center gap-5 flex-wrap">
 
                     <div
-                        class="max-w-[280px] w-full flex flex-col items-center justify-center  hover:shadow-xl rounded-lg pb-2">
+                        class="max-w-[280px] w-full flex flex-col items-center justify-center  hover:shadow-xl rounded-lg pb-2 effect-card-1">
                         <figure>
                             <img src="assets/icon-marketing.png" alt="icon de marketing" title="icon de Marketing">
+                            <figcaption class="text-[7px] text-center">
+                                Ícone criado por
+                                <a href="https://www.figma.com/@isro1">@isro1</a>
+                                do Autor sob licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                                    4.0</a>
+                            </figcaption>
                         </figure>
                         <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
-                            DIGITAL MARKETING SPECIALIS
+                            DIGITAL MARKETING
                         </h4>
                         <p class="text-grayParagrafo text-[14px] font-semibold text-center">
                             Usar as mídias digitais como um esforço em marketing, publicidade e atividades promocionais
@@ -204,12 +242,18 @@
                     </div>
                     <!-- Card WebSite -->
                     <div
-                        class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
+                        class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2 effect-card-2">
                         <figure>
                             <img src="assets/icon-dev.png" alt="icon de Dev" title="icon de Development">
+                            <figcaption class="text-[7px] text-center">
+                                Ícone criado por
+                                <a href="https://www.figma.com/@isro1">@isro1</a>
+                                do Autor sob licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                                    4.0</a>
+                            </figcaption>
                         </figure>
                         <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
-                            WEBSITE DEVELOPMENT
+                            WEB DEVELOPMENT
                         </h4>
                         <p class="text-grayParagrafo text-[14px] font-semibold text-center">
                             O processo de trabalho de desenvolvimento de um site simples ou complexo é dinâmico desde a
@@ -218,9 +262,15 @@
                     </div>
                     <!-- Card Design -->
                     <div
-                        class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2">
+                        class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2 effect-card-3">
                         <figure>
                             <img src="assets/icon-design.png" alt="icon de Web Designer" title="icon de Web Designer">
+                            <figcaption class="text-[7px] text-center">
+                                Ícone criado por
+                                <a href="https://www.figma.com/@isro1">@isro1</a>
+                                do Autor sob licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY
+                                    4.0</a>
+                            </figcaption>
                         </figure>
                         <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
                             WEBSITE DESIGN
@@ -238,13 +288,15 @@
         <!-- Planos da plataforma -->
         <section id="plan" class="my-20">
 
-            <h2 class="text-center font-bold text-2xl uppercase mb-7">
+            <h2 class="text-center font-bold text-2xl uppercase mb-7 efect-title">
                 Planos disponiveis
             </h2>
 
-            <div class="flex justify-center items-center flex-wrap gap-2 max-w-[1440px] w-full mx-auto">
+            <div
+                class="flex justify-center items-center flex-wrap gap-2  w-full mx-auto bg-gradient-to-t from-[#1460ee] from-50% to-white to-50% pb-20">
                 <!-- Plano Basic -->
-                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
+                <div
+                    class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-1 bg-white">
 
                     <h3 class="font-bold my-2">Basic</h3>
                     <h4 class="font-bold text-3xl">R$ 10,00</h4>
@@ -265,7 +317,8 @@
                     </button>
                 </div>
                 <!-- Plano Pro -->
-                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
+                <div
+                    class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-2 bg-white">
 
                     <h3 class="font-bold my-2">Pro</h3>
                     <h4 class="font-bold text-3xl">R$ 50,00</h4>
@@ -286,7 +339,8 @@
                     </button>
                 </div>
                 <!-- Plano utimate -->
-                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
+                <div
+                    class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-3 bg-white">
 
                     <h3 class="font-bold my-2">Ultimate</h3>
                     <h4 class="font-bold text-3xl">R$ 50,00</h4>
@@ -307,7 +361,8 @@
                     </button>
                 </div>
                 <!-- Plano 4 -->
-                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
+                <div
+                    class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-4 bg-white">
 
                     <h3 class="font-bold my-2">Mudar</h3>
                     <h4 class="font-bold text-3xl">R$ 450,00</h4>
@@ -327,7 +382,8 @@
                     </button>
                 </div>
                 <!-- Plano 5 -->
-                <div class="shadow-lg max-w-[250px] w-full text-center rounded-xl">
+                <div
+                    class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-5 bg-white">
 
                     <h3 class="font-bold my-2">Mudar</h3>
                     <h4 class="font-bold text-3xl">R$ 500,00</h4>
@@ -348,21 +404,33 @@
                     </button>
                 </div>
             </div>
+            <div class="flex justify-center items-center flex-col gap-5 pb-10 bg-[#1460ee] ">
+
+                <h2
+                 class="text-center font-poppins font-bold text-zinc-50 xsmall:text-sm small:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl effect-serves-description">
+                    Gostou de algum plano, entre em contato com um de nosso agentes.
+                </h2>
+
+                <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank"
+                    class="bg-green-500 text-zinc-50 font-bold px-5 py-2 rounded-xl xsmall:text-sm effect-serves-description hover:scale-105">
+                    Agente uma consulta Gratis
+                </a>
+            </div>
         </section>
 
         <section id="about">
             <!-- Pequeno texto sobre a empresa -->
             <div class="flex items-center justify-center gap-4 mb-12 flex-wrap max-w-[1440px] w-full mx-auto">
-                <figure class="lg:w-6/12">
+                <figure class="lg:w-6/12 effect-img-about">
                     <img src="assets/icon-sbore.png" alt="Icon Banner da descrição da empresa"
                         title="Icon Banner da descrição da empresa" class="lg:w-10/12">
                 </figure>
 
-                <div class="w-2/4 text-justify xsmall:w-11/12 small:w-11/12 md:w-10/12 lg:w-5/12">
-                    <h2 class="font-bold uppercase text-center mb-5 text-2xl" title="Quem somos">
+                <div class="w-2/4 text-justify xsmall:w-11/12 small:w-11/12 md:w-10/12 lg:w-5/12 effect-text-about">
+                    <h2 class="font-bold uppercase text-center mb-5 text-2xl efect-title" title="Quem somos">
                         Quem Somos
                     </h2>
-                    <P class="mb-3 leading-8" title="um breve resumo sobre a empresa">
+                    <P class="mb-3 leading-8 " title="um breve resumo sobre a empresa">
                         A DNA Markting se especializa em criar campanhas envolventes e conteúdo criativo que falam
                         diretamente com
                         a geração Z e os millennials, utilizando as últimas tecnologias e plataformas de mídia social
@@ -396,7 +464,7 @@
                         Entrar em Contato
                     </h2>
                     <p class="font-poppins text-[16px] xsmall:text-[13px] small:text-[14px] mb-7">
-                        Após o envio do formulario Você será redirecionado para o WhasApp, E no WhasApp entramos em
+                        Após o envio do formulário Você será redirecionado para o WhatsApp, E no WhatsApp entramos em
                         contato com o Senhor(a).
                     </p>
                 </div>
@@ -428,7 +496,7 @@
                         <!-- Input Telefone -->
                         <div class="flex flex-col">
                             <label for="userPhone" class="my-2">
-                                Telefone (Cel):
+                                Telefone ( Cel ):
                             </label>
                             <input type="tel" name="userPhone" id="userPhone" title="Digite seu Número de Celular"
                                 class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
@@ -438,7 +506,7 @@
                         <!-- Input Site ULR -->
                         <div class="flex flex-col">
                             <label for="userWeb" class="my-2">
-                                Ulr Site:
+                                ULR Site:
                             </label>
                             <input type="text" name="userWeb" id="userWeb" title="Digite a URL do seu site ( opcional )"
                                 class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
@@ -447,10 +515,7 @@
                         </div>
 
                         <div class="my-7 mx-auto">
-                            <button 
-                            title="Enviar o formulario"
-                            id="btn-submit-form"
-                             type="submit"
+                            <button title="Enviar o formulario" id="btn-submit-form" type="submit"
                                 class="bg-green-500 hover:bg-green-600 py-2 px-10 font-bold rounded-lg active:scale-105">
                                 Enviar
                             </button>
@@ -464,7 +529,11 @@
     <footer class="gradient-Global text-zinc-50 font-poppins text-xs pt-10">
 
         <figure class="flex items-center justify-center mb-5">
-            <img src="assets/Frame 1.png" alt="Logo da Empresa" class="max-w-36 w-full" title="Logo da Empresa Dna Marketing">
+            <a href="index.html">
+                <img src="assets/Frame 1.png" alt="Logo da Empresa" class="max-w-36 w-full"
+                    title="Logo da Empresa Dna Marketing">
+            </a>
+
         </figure>
 
         <div
@@ -479,10 +548,20 @@
 
                     <li>
                         <figure class="flex space-x-4 mt-4">
-                            <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10" title="Rede Social Fecebook">
-                            <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" class="w-10" title="Rede Social Linkeding">
-                            <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" class="w-10" title="Rede Social WhatsApp">
+                            <a href="https://www.facebook.com/profile.php?id=61556172175682&locale=pt_BR"
+                                target="_blank">
+                                <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10"
+                                    title="Rede Social Fecebook">
+                            </a>
+                            <a href="" target="_blank">
+                                <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" class="w-10"
+                                    title="Rede Social Linkeding">
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank">
+                                <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" class="w-10"
+                                    title="Rede Social WhatsApp">
 
+                            </a>
                         </figure>
                     </li>
                 </ul>
@@ -497,13 +576,14 @@
                     </li>
 
                     <li>
-                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8">Local: R. Viçosa do Ceará </a>
+                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8" target="_blank">Local: R. Viçosa do Ceará
+                        </a>
                     </li>
                     <li>
-                        <a href="">Atendimento das 09hrs ás 17hrs</a>
+                        <a href="tel:71 99619-3437 ">WhatsApp: (71) 99619-3437 </a>
                     </li>
                     <li>
-                        <a href="tel:11 99999-9999">WhatsApp: (11) 99999-9999</a>
+                        Atendimento das 09hrs ás 17hrs
                     </li>
                 </ul>
             </div>
@@ -517,22 +597,7 @@
 
     </footer>
 
-    <script src="js/index.js"></script>
-    <!-- Import jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Lib Mask -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
-        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
-        integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-        $('#userPhone').mask('(00) 00000-0000');
-    </script>
 
 </body>
 
