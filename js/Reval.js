@@ -65,7 +65,7 @@ ScrollReveal().reveal('.effect-card-2',
     {
         reset: true,
         distance: '90px',
-        time: 500,
+        time: 1000,
         duration: 2000
 
     });
@@ -73,7 +73,7 @@ ScrollReveal().reveal('.effect-card-3',
     {
         reset: true,
         distance: '90px',
-        time: 500,
+        time: 1500,
         duration: 3000
 
     });
@@ -81,7 +81,7 @@ ScrollReveal().reveal('.effect-card-4',
     {
         reset: true,
         distance: '90px',
-        time: 500,
+        time: 2000,
         duration: 4500
 
     });
@@ -89,7 +89,7 @@ ScrollReveal().reveal('.effect-card-5',
     {
         reset: true,
         distance: '90px',
-        time: 500,
+        time: 2500,
         duration: 5000
 
     });

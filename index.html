@@ -4,32 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- meta tag que descreve o conteudo da sua pagina, ajuda o usuário a saber do que se trata a pagina -->
-    <meta name="description" content="Empresa no setor de Marketing Digital" />
+    <meta name="description"
+        content="Especialista em soluções de marketing digital, nossa agência oferece serviços personalizados para impulsionar o crescimento de empresas de todos os tamanhos. Desde SEO, mídias sociais até campanhas de PPC, transformamos sua presença online em resultados reais.">
     <!-- meta tag que descreve quem criou a pagina -->
     <meta name="author" content="DNA Marketing Digital" />
     <!-- Chaves da pagina, É quando você pesquisa pelo um nome e aparece na pesquisa a pagina -->
-    <meta name="keyword"
-        content="DNA Marketing Digital, Marketing Digital para sua empresa, Como fazer Marketing em sua empresa " />
-
+    <meta name="keywords"
+        content="Dna Marketing Digital, Dna Marketing, marketing digital, estratégias de marketing digital, tendências de marketing digital, fotografia digital, imagens digitais, tecnologia digital, inovação digital, mídia digital, redes sociais, marketing online">
     <!-- meta tag robots, ela se refere ao navegador e específica se será visivel a pagina ou não ou se pode usar um link de referencia dentro da pagina-->
     <meta name="robots" content="index follow" />
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-
     <!-- Link da font de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Style global da pagina -->
     <link rel="stylesheet" href="styles/style.css">
 
     <title>DNA - Marketing Digital</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/index.js" defer></script>
     <!-- Import jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Lib Mask -->
@@ -39,16 +34,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
         integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <!-- Lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Config lib -->
     <script src="js/Reval.js" defer></script>
     <!-- Chat -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        $('#userPhone').mask('(00) 00000-0000');
-    </script>
 
     <script>
         tailwind.config = {
@@ -85,7 +76,7 @@
 
 </head>
 
-<body>
+<body class="overflow-x-hidden font-poppins">
 
     <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
         <div class="max-width-[1440px] flex justify-around items-center max-w-[1440px] mx-auto">
@@ -407,7 +398,7 @@
             <div class="flex justify-center items-center flex-col gap-5 pb-10 bg-[#1460ee] ">
 
                 <h2
-                 class="text-center font-poppins font-bold text-zinc-50 xsmall:text-sm small:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl effect-serves-description">
+                    class="text-center font-poppins font-bold text-zinc-50 xsmall:text-sm small:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl effect-serves-description">
                     Gostou de algum plano, entre em contato com um de nosso agentes.
                 </h2>
 
@@ -597,7 +588,10 @@
 
     </footer>
 
-
+    <script>
+        $('#userPhone').mask('(00) 00000-0000');
+    </script>
+    <script src="js/index.js"></script>
 
 </body>
 
