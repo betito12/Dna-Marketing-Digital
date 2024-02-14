@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dna Marketing - FAQ</title>
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+    <!-- icon de diferentes tamanhos de telas -->
+    <link rel="apple-touch-icon" href="./assests/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./assests/android-chrome-512x512.png" sizes="512x512">
+    <link rel="manifest" href="manifest.json" />
+    <!-- Link da font de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/Global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+
+                screens: {
+                    'xsmall': { 'max': '380px' },
+                    'small': { 'min': '381px', 'max': '599px' },
+                    'md': { 'min': '600px', 'max': '960px' },
+                    'lg': { 'min': '961px', 'max': '1440px' },
+                    'xl': { 'min': '1441px', 'max': '1900px' },
+                    '2xl': { 'min': '1901px' }
+                },
+                extend: {
+                    backgroundColor: {
+                        blue: "#152ec0",
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                        blueText: "0803FF",
+                        grayParagrafo: "#5B5F62"
+                    },
+                    fontFamily: {
+                        'poppins': "'Poppins'"
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+
+<body class="font-poppins">
+
+    <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
+        <div class="max-width-[1440px] flex justify-around items-center max-w-[1440px] mx-auto">
+            <figure>
+                <a href="index.html">
+                    <img src="assets/Frame 1.png" alt="Logo da Empresa DNA Marketing" width="90px"
+                        title="Logo da Empresa DNA Marketing">
+                </a>
+            </figure>
+
+            <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
+
+                <button type="button" onclick="BtnClose()" title="Menu">
+                    <!-- Svg menu hamburgue -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+
+            </div>
+
+            <nav id="navBar"
+                class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
+
+                <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden 2xl:hidden">
+                    <button type="button" onclick="BtnClose()" title="Fechar menu">
+                        <!-- Botão com uma imagem de fundo para sair da tela do usuário -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </button>
+                </div>
+
+                <ul
+                    class="flex justify-center items-center space-x-10 md:m-0 small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
+                    <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
+                        onclick="BtnClose()">
+                        <a title="Planos" href="index.html#plan"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            Planos</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
+                        onclick="BtnClose()">
+                        <a title="Quem Somos" href="index.html#about"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
+                            Sobre</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
+                        onclick="BtnClose()">
+                        <a href="index.html#services" title="serviços"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            Serviços</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
+                        onclick="BtnClose()">
+                        <a href="Faq.html" title="serviços"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            FAQS</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
+                        onclick="BtnClose()">
+                        <a title="Botão Contato" href="index.html#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                            small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
+                            md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
+                             lg:bg-green-400 lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
+                             xl:bg-green-400 xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
+                             2xl:bg-green-400 2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
+                            Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class=" flex items-center justify-center flex-col my-10">
+
+                <div class="font-bold text-3xl mb-10">
+                    <h2 class="xsmall:text-[20px] small:text-[25px]">Perguntas frequentes</h2>
+                </div>
+
+                <div class="flex flex-col gap-3">
+
+                    <!-- FAQ 1 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">1 - O que é marketing digital?</h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg"
+                                width="20px">
+
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden">
+
+                            <p class="w-11/12 text-justify mx-auto mb-1.5 text-sm leading-6">
+                                Marketing digital refere-se ao uso de canais digitais para promover ou comercializar
+                                produtos e serviços para consumidores e empresas. Envolve uma gama de estratégias,
+                                incluindo
+                                SEO, marketing de conteúdo, marketing nas redes sociais, email marketing, anúncios pagos
+                                e
+                                mais.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                2 - Como o marketing digital pode beneficiar meu negócio?
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                O marketing digital pode aumentar a visibilidade da sua marca, alcançar um público mais
+                                amplo de maneira mais eficaz e custo-beneficiente em comparação com métodos
+                                tradicionais,
+                                melhorar o engajamento com o cliente, e impulsionar vendas e conversões.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                3 - Qual é a diferença entre SEO e SEM?
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                SEO (Search Engine Optimization) refere-se à otimização do seu site e conteúdo para
+                                melhorar
+                                sua visibilidade nos resultados de pesquisa orgânica. SEM (Search Engine Marketing), por
+                                outro lado, abrange SEO e também inclui publicidade paga, como PPC (Pay-Per-Click), para
+                                aumentar a visibilidade nos motores de busca.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                4 - Como posso medir o sucesso das minhas campanhas de marketing digital?
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                O sucesso pode ser medido usando várias métricas, incluindo, mas não limitado a, tráfego
+                                do
+                                site, taxas de conversão, retorno sobre o investimento (ROI), engajamento nas redes
+                                sociais,
+                                e a eficácia de campanhas de email marketing. Ferramentas analíticas como Google
+                                Analytics
+                                podem fornecer insights valiosos.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                5 - Quanto tempo leva para ver resultados com o marketing digital?
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                O tempo para ver resultados varia dependendo da estratégia e do mercado. Algumas
+                                táticas,
+                                como PPC, podem gerar resultados quase imediatamente, enquanto SEO e marketing de
+                                conteúdo
+                                geralmente levam mais tempo para construir momentum e mostrar resultados significativos.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- FAQ 6 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                6 - O que é marketing de conteúdo e por que é importante?
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                Marketing de conteúdo envolve a criação e compartilhamento de materiais valiosos,
+                                relevantes
+                                e consistentes para atrair e reter um público claramente definido, e, finalmente, para
+                                impulsionar a ação do cliente. É importante porque ajuda a construir confiança,
+                                desenvolver
+                                relacionamentos, melhorar conversões e gerar leads.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2 ">
+                                7 - Como escolher as plataformas de redes sociais certas para meu negócio?
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                A escolha depende do seu público-alvo e dos objetivos do seu negócio. É crucial entender
+                                onde seu público passa seu tempo e como eles preferem se engajar. Realizar pesquisas de
+                                mercado e testar diferentes plataformas pode ajudar a determinar as mais eficazes para
+                                seu
+                                negócio.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                8 - O que é email marketing e como posso utilizá-lo efetivamente?
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                Email marketing é o envio de mensagens comerciais para um grupo de pessoas usando o
+                                email.
+                                Para usá-lo efetivamente, é importante segmentar sua lista de contatos, personalizar
+                                suas
+                                mensagens, oferecer valor real e incluir chamadas para ação claras.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                9 - Como Adquirir um Plano ?
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                Feito a trazer do whatsapp,
+                                A empresa, por meio de um atendente ou um sistema automatizado, responderá à sua
+                                mensagem, fornecendo informações detalhadas
+                                sobre os planos disponíveis, preços e características. Esclareça todas as suas dúvidas
+                                diretamente na conversa para escolher
+                                o plano que melhor atende às suas necessidades.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                10 - Formas de pagamentos
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                Aceitamos cartão de crédito com parcelamento em até 12 vezes sem juros, compra à vista
+                                via
+                                Pix ou Boleto. E se você for cliente Nubank, também pode parcelar em até 24x ou ter um
+                                limite extra no cartão de crédito utilizando o NuPay.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 11 -->
+                    <div
+                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col border-b-2 border-b-[#3276f0]">
+
+                        <div class="flex items-center justify-between">
+
+                            <h3 class="font-semibold mb-2">
+                                11 - Personalização de planos
+                            </h3>
+                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                                width="20px">
+
+                        </div>
+
+                        <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
+
+                            <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
+                                Sim, Personalizamos nossos planos com forme a demanda do cliente ou a necessidade do
+                                cliente com os planos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="gradient-Global text-zinc-50 font-poppins text-xs pt-10">
+
+        <figure class="flex items-center justify-center mb-5">
+            <a href="index.html">
+                <img src="assets/Frame 1.png" alt="Logo da Empresa" class="max-w-36 w-full"
+                    title="Logo da Empresa Dna Marketing">
+            </a>
+
+        </figure>
+
+        <div
+            class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10 max-w-[1440px] mx-auto">
+            <div>
+                <ul>
+                    <li>
+                        <h3 class="font-bold text-xl">
+                            Redes Sociais
+                        </h3>
+                    </li>
+
+                    <li>
+                        <figure class="flex space-x-4 mt-4">
+                            <a href="https://www.facebook.com/profile.php?id=61556172175682&locale=pt_BR"
+                                target="_blank">
+                                <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" width="30px"
+                                    title="Rede Social Fecebook">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" width="30px"
+                                    title="Rede Social Linkeding">
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank">
+                                <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" width="30px"
+                                    title="Rede Social WhatsApp">
+
+                            </a>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" text-center">
+                <ul class="space-y-2">
+                    <li>
+                        <h3 class="font-bold text-2xl">
+                            Empresa
+                        </h3>
+                    </li>
+
+                    <li>
+                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8" target="_blank">Local: R. Viçosa do Ceará
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:71 99619-3437" target="_blank">WhatsApp: (71) 99619-3437 </a>
+                    </li>
+                    <li>
+                        Atendimento das 09hrs ás 17hrs
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+            <p class="text-[10px] xsmall:text-[8px]">
+                &copy; 2024 DNA MARKETING DIGITAL. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="js/Faq.js"></script>
+    <script src="js/MenuNav.js"></script>
+</body>
+
+</html>

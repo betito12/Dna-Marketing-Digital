@@ -21,6 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Style global da pagina -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- icon de diferentes tamanhos de telas -->
+    <link rel="apple-touch-icon" href="./assests/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./assests/android-chrome-512x512.png" sizes="512x512">
+    <link rel="manifest" href="manifest.json" />
+
 
     <title>DNA - Marketing Digital</title>
 
@@ -117,23 +122,29 @@
 
                 <ul
                     class="flex justify-center items-center space-x-10  small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
-                    <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                    <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         onclick="BtnClose()">
                         <a title="Planos" href="#plan"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Planos</a>
                     </li>
-                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         onclick="BtnClose()">
                         <a title="Quem Somos" href="#about"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
-                            Quem Somos</a>
+                            Sobre</a>
                     </li>
-                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         onclick="BtnClose()">
                         <a href="#services" title="serviços"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Serviços</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
+                        onclick="BtnClose()">
+                        <a href="Faq.html" title="serviços"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            FAQS</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
                         onclick="BtnClose()">
@@ -421,10 +432,12 @@
                     <h2 class="font-bold uppercase text-center mb-5 text-2xl efect-title" title="Quem somos">
                         Quem Somos
                     </h2>
+                  
+                
                     <P class="mb-3 leading-8 " title="um breve resumo sobre a empresa">
                         A DNA Markting se especializa em criar campanhas envolventes e conteúdo criativo que falam
-                        diretamente com
-                        a geração Z e os millennials, utilizando as últimas tecnologias e plataformas de mídia social
+                        diretamente com o publico mais jovem e mais experiente,
+                       <!--  a geração Z e os millennial --> utilizando as últimas tecnologias e plataformas de mídia social
                         para maximizar o
                         impacto e a interação. Seus serviços incluem marketing de influência, gestão de mídias sociais,
                         criação de conteúdo viral,
@@ -515,6 +528,8 @@
                 </div>
             </div>
         </section>
+
+
     </main>
 
     <footer class="gradient-Global text-zinc-50 font-poppins text-xs pt-10">
@@ -592,6 +607,7 @@
         $('#userPhone').mask('(00) 00000-0000');
     </script>
     <script src="js/index.js"></script>
+    <script src="js/Faq.js"></script>
 
 </body>
 

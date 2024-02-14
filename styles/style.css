@@ -9,3 +9,4 @@ html{   scroll-behavior: smooth;   overflow-x: hidden;}
 .form-content{   display: flex;    flex-direction: column; }
 
 .form-content.error p{  color: #ff3b25;   visibility: visible;}
+

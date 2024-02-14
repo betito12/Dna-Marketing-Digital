@@ -13,6 +13,10 @@
     <!-- meta tag robots, ela se refere ao navegador e específica se será visivel a pagina ou não ou se pode usar um link de referencia dentro da pagina-->
     <meta name="robots" content="index follow" />
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- icon de diferentes tamanhos de telas -->
+    <link rel="apple-touch-icon" href="./assests/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./assests/android-chrome-512x512.png" sizes="512x512">
+    <link rel="manifest" href="manifest.json" />
 
     <title>DNA Marketing - Sobre</title>
 
@@ -98,26 +102,31 @@
 
                 <ul
                     class="flex justify-center items-center space-x-10  small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
-                    <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
-                        onclick="BtnClose()">
+                    <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
+                       >
                         <a href="index.html#plan" title="Sessão planos da pagina"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Planos</a>
                     </li>
-                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
-                        onclick="BtnClose()">
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
+                       >
                         <a href="index.html#about" title="Sessão planos da pagina"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
                             Quem Sobre</a>
                     </li>
-                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold"
-                        onclick="BtnClose()">
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
+                        >
                         <a href="index.html#services" title="Sessão Serviços da pagina"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Serviços</a>
                     </li>
-                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
-                        onclick="BtnClose()">
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink">
+                        <a href="Faq.html" title="serviços"
+                            class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
+                            FAQS</a>
+                    </li>
+                    <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105 navLink"
+                       >
                         <a title="Sessão contato da pagina" href="index.html#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
                             small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
                             md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
