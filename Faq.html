@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore as respostas para as perguntas mais comuns sobre nossas estratégias e serviços de marketing digital, incluindo SEO, mídias sociais e campanhas de e-mail.">
+    <meta name="author" content="Dna Marketing Digital" />
+    <meta name="keywords"
+        content="marketing digital, estratégias de marketing, SEO, otimização de mecanismos de busca, redes sociais, marketing de conteúdo, e-mail marketing, análise de dados, marketing online, DNA Marketing Digital">
+    <meta name="robots" content="index follow" />
+    <meta name="theme-color" content="#00A8FE">
+    <meta property="og:image" content="https://a.imagem.app/oalLCW.png">
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:title" content="Dna Marketing - Perguntas frequentes">
+    <meta property="og:site_name" content="Dna Marketing, Agência de Marketing Digital, Empresa marketing digital" />
+    <meta name="og:locale" content="pt_BR" />
+    <meta property="og:description"
+        content="Explore as respostas para as perguntas mais comuns feitas para Dna Marketing">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Sempre que o site trocar de URL ou mudar de Host, trocar o content com a URL de destino -->
+    <!-- <meta property="og:url" content="" /> -->
+
     <title>Dna Marketing - Perguntas frequentes</title>
+
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
     <!-- icon de diferentes tamanhos de telas -->
-    <link rel="apple-touch-icon" href="./assests/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./assests/android-chrome-512x512.png" sizes="512x512">
+    <link rel="apple-touch-icon" href="./assets/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./assets/android-chrome-512x512.png" sizes="512x512" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <!-- Manifest da pagina -->
     <link rel="manifest" href="manifest.json" />
     <!-- Link da font de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
+    <!-- Import Css -->
     <link rel="stylesheet" href="styles/Faq.css">
+    <!-- O tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Config básica -->
     <script>
         tailwind.config = {
             theme: {
-
                 screens: {
                     'xsmall': { 'max': '380px' },
                     'small': { 'min': '381px', 'max': '599px' },
@@ -31,32 +54,25 @@
                     '2xl': { 'min': '1901px' }
                 },
                 extend: {
-                    backgroundColor: {
-                        blue: "#152ec0",
-                    },
+                    backgroundColor: { blue: "#152ec0" },
                     colors: {
                         clifford: '#da373d',
                         blueText: "0803FF",
                         grayParagrafo: "#5B5F62"
                     },
-                    fontFamily: {
-                        'poppins': "'Poppins'"
-                    },
+                    fontFamily: { 'poppins': "'Poppins'" },
                 }
             }
         }
     </script>
-
 </head>
 
-
 <body class="font-poppins">
-
     <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
         <div class="max-width-[1440px] flex justify-around items-center max-w-[1440px] mx-auto">
             <figure>
                 <a href="index.html">
-                    <img src="assets/Frame 1.png" alt="Logo da Empresa DNA Marketing" width="90px"
+                    <img src="assets/icon-logo.svg" alt="Logo da Empresa DNA Marketing" width="90px"
                         title="Logo da Empresa DNA Marketing">
                 </a>
             </figure>
@@ -111,18 +127,18 @@
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         onclick="BtnClose()">
-                        <a href="Faq.html" title="serviços"
+                        <a href="Faq.html" title="Perguntas Frequentes"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             FAQS</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
                         onclick="BtnClose()">
-                        <a title="Botão Contato" href="index.html#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                        <a title="Botão Contato" href="index.html#contact-form" class="bg-green-600 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
                             small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
-                            md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
-                             lg:bg-green-400 lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
-                             xl:bg-green-400 xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
-                             2xl:bg-green-400 2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
+                            md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
+                             lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
+                              xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
+                              2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
                             Contato</a>
                     </li>
                 </ul>
@@ -365,8 +381,8 @@
                         <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
 
                             <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
-                                Feito a trazer do whatsapp,
-                                A empresa, por meio de um atendente ou um sistema automatizado, responderá à sua
+                                Feito a travez do WhatsApp
+                                da empresa, por meio de um atendente ou um sistema automatizado, responderá à sua
                                 mensagem, fornecendo informações detalhadas
                                 sobre os planos disponíveis, preços e características. Esclareça todas as suas dúvidas
                                 diretamente na conversa para escolher
@@ -401,8 +417,7 @@
                     </div>
 
                     <!-- FAQ 11 -->
-                    <div
-                        class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col">
+                    <div class="faq max-w-[700px] w-11/12 mx-auto devide-y pb-1 pt-2 flex-col">
 
                         <div class="flex items-center justify-between">
 
@@ -417,7 +432,7 @@
                         <div class="conteudo leanding-8 pt-1 max-h-0 overflow-hidden ">
 
                             <p class="w-11/12 mx-auto text-justify mb-2.5 text-sm leading-6">
-                                Sim, Personalizamos nossos planos com forme a demanda do cliente ou a necessidade do
+                                Sim, Personalizamos nossos planos comforme a demanda do cliente ou a necessidade do
                                 cliente com os planos
                             </p>
                         </div>
@@ -432,7 +447,7 @@
 
         <figure class="flex items-center justify-center mb-5">
             <a href="index.html">
-                <img src="assets/Frame 1.png" alt="Logo da Empresa" class="max-w-36 w-full"
+                <img src="assets/icon-logo-footer.svg" alt="Logo da Empresa" class=" w-full"
                     title="Logo da Empresa Dna Marketing">
             </a>
 
@@ -452,15 +467,15 @@
                         <figure class="flex space-x-4 mt-4">
                             <a href="https://www.facebook.com/profile.php?id=61556172175682&locale=pt_BR"
                                 target="_blank">
-                                <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" width="30px"
+                                <img src="assets/icon-fecebook.svg" alt="Icone da rede social Fecebook" width="30px"
                                     title="Rede Social Fecebook">
                             </a>
                             <a href="#" target="_blank">
-                                <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" width="30px"
-                                    title="Rede Social Linkeding">
+                                <img src="assets/icon-linkedin.svg" alt="Icone da rede social Linkeding" width="30px"
+                                    title="Rede Social Linkedin">
                             </a>
                             <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank">
-                                <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" width="30px"
+                                <img src="assets/icon-WhatsApp.svg" alt="Icone da rede social WhatsApp" width="30px"
                                     title="Rede Social WhatsApp">
 
                             </a>
@@ -470,21 +485,22 @@
             </div>
 
             <div class=" text-center">
-                <ul class="space-y-2">
+                <ul class="space-y-2 small:space-y-3 xsmall:space-y-3">
                     <li>
                         <h3 class="font-bold text-2xl">
                             Empresa
                         </h3>
                     </li>
-
                     <li>
-                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8" target="_blank">Local: R. Viçosa do Ceará
+                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8" target="_blank"
+                            title="Sede da empresa">Local: R. Viçosa do Ceará
                         </a>
                     </li>
                     <li>
-                        <a href="tel:71 99619-3437" target="_blank">WhatsApp: (71) 99619-3437 </a>
+                        <a href="tel:71 99619-3437" target="_blank" title="Telefone da Empresa">Telefone: (71)
+                            99619-3437 </a>
                     </li>
-                    <li>
+                    <li title="Horário de funcionamento">
                         Atendimento das 09hrs ás 17hrs
                     </li>
                 </ul>
@@ -492,7 +508,7 @@
         </div>
 
         <div class="flex items-center justify-center">
-            <p class="text-[10px] xsmall:text-[8px]">
+            <p class="text-[10px] xsmall:text-[8px]" title="Direitos Autorais">
                 &copy; 2024 DNA MARKETING DIGITAL. Todos os direitos reservados.
             </p>
         </div>

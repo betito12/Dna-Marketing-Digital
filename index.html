@@ -4,31 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta tag que descreve o conteudo da sua pagina, ajuda o usuário a saber do que se trata a pagina -->
     <meta name="description"
-        content="Especialista em soluções de marketing digital, nossa agência oferece serviços personalizados para impulsionar o crescimento de empresas de todos os tamanhos. Desde SEO, mídias sociais até campanhas de PPC, transformamos sua presença online em resultados reais.">
-    <!-- meta tag que descreve quem criou a pagina -->
+        content="Especialista em soluções de marketing digital, nossa agência oferece serviços personalizados e planos para impulsionar o crescimento de empresas de todos os tamanhos. Desde SEO, mídias sociais até campanhas de PPC, transformamos sua presença online em resultados reais.">
     <meta name="author" content="DNA Marketing Digital" />
-    <!-- Chaves da pagina, É quando você pesquisa pelo um nome e aparece na pesquisa a pagina -->
     <meta name="keywords"
         content="Dna Marketing Digital, Dna Marketing, marketing digital, estratégias de marketing digital, tendências de marketing digital, fotografia digital, imagens digitais, tecnologia digital, inovação digital, mídia digital, redes sociais, marketing online">
-    <!-- meta tag robots, ela se refere ao navegador e específica se será visivel a pagina ou não ou se pode usar um link de referencia dentro da pagina-->
     <meta name="robots" content="index follow" />
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <!-- Link da font de texto -->
+    <meta name="theme-color" content="#00A8FE">
+    <meta property="og:image" content="https://a.imagem.app/oalLCW.png">
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:title" content="Agência de marketing digital">
+    <!-- Sempre que o site trocar de URL ou mudar de Host, trocar o content com a URL de destino -->
+    <!-- <meta property="og:url" content="" /> -->
+    <meta property="og:site_name" content="Dna Marketing, Agência de Marketing Digital, Empresa marketing digital" />
+    <meta name="og:locale" content="pt_BR" />
+    <meta property="og:description"
+        content="A agência Dna Marketing trabalha para aproximar marcas e pessoas através da tecnologia. Planejamento focado em Proximidade, Experiência e Diálogo.">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Agência de Marketing Digital - Dna Marketing</title>
+
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./assets/android-chrome-512x512.png" sizes="512x512" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Style global da pagina -->
     <link rel="stylesheet" href="styles/style.css">
-    <!-- icon de diferentes tamanhos de telas -->
-    <link rel="apple-touch-icon" href="./assests/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./assests/android-chrome-512x512.png" sizes="512x512">
-    <link rel="manifest" href="manifest.json" />
-
-
-    <title>DNA - Marketing Digital</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Import jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -40,16 +45,15 @@
         integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Lib -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Config lib -->
     <script src="js/Reval.js" defer></script>
     <!-- Chat -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <script src="//code.jivosite.com/widget/R7oc72HXBU" async></script>
     <script>
         tailwind.config = {
             theme: {
-
                 screens: {
                     'xsmall': { 'max': '380px' },
                     'small': { 'min': '381px', 'max': '599px' },
@@ -58,36 +62,27 @@
                     'xl': { 'min': '1441px', 'max': '1900px' },
                     '2xl': { 'min': '1901px' }
                 },
-
                 extend: {
-                    backgroundColor: {
-                        blue: "#152ec0",
-                        white: "#fff"
-                    },
+                    backgroundColor: { blue: "#152ec0" },
                     colors: {
                         clifford: '#da373d',
                         blueText: "0803FF",
                         grayParagrafo: "#5B5F62"
                     },
-                    fontFamily: {
-                        'poppins': "'Poppins'"
-                    },
-
+                    fontFamily: { 'poppins': "'Poppins'" },
                 }
             }
         }
     </script>
-    <script src="//code.jivosite.com/widget/R7oc72HXBU" async></script>
-
 </head>
 
 <body class="overflow-x-hidden font-poppins">
 
-    <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
+    <header class=" py-3 shadow-lg shadow-zinc-100 small:relative">
         <div class="max-width-[1440px] flex justify-around items-center max-w-[1440px] mx-auto">
             <figure>
                 <a href="index.html">
-                    <img src="assets/Frame 1.png" alt="Logo da Empresa DNA Marketing" width="90px"
+                    <img src="assets/icon-logo.svg" alt="Logo da Empresa DNA Marketing" width="90px"
                         title="Logo da Empresa DNA Marketing">
                 </a>
             </figure>
@@ -148,12 +143,12 @@
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
                         onclick="BtnClose()">
-                        <a title="Botão Contato" href="#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                        <a title="Botão Contato" href="#contact-form" class="bg-green-600 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
                             small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
-                            md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
-                             lg:bg-green-400 lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
-                             xl:bg-green-400 xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
-                             2xl:bg-green-400 2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
+                            md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
+                             lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
+                             xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
+                              2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
                             Contato</a>
                     </li>
                 </ul>
@@ -163,7 +158,6 @@
     </header>
 
     <main>
-
         <section id="banner"
             class="flex justify-around items-center small:flex-col min-h-[30vh] pt-2 xsmall:h-auto small:h-auto xsmall:flex-col-reverse small:flex-col-reverse md:flex-col-reverse md:h-auto max-w-[1440px] mx-auto">
             <!-- Banner -->
@@ -184,7 +178,7 @@
             </div>
 
             <figure class="efect-img-banner">
-                <img src="assets/banner-test-2.png" alt="Banner DNA Marketing" title="Banner DNA Marketing"
+                <img src="assets/Ilustration.svg" alt="Banner DNA Marketing" title="Banner DNA Marketing"
                     class="w-11/12 mx-auto">
                 <figcaption class="text-[7px] text-center">
                     Ícone criado por
@@ -206,8 +200,7 @@
                     <h3 class="text-2xl text-center font-bold mb-5 small:text-lg xsmall:text-lg">
                         O que podemos fornecer para o seu negócio
                     </h3>
-                    <p
-                        class="text-center text-grayParagrafo text-base font-semibold text-center mb-10 xsmall:text-sm small:text-base">
+                    <p class="text-center text-grayParagrafo text-sm text-center mb-10 leading-7">
                         Estamos aqui para ajudar a sua empresa a alcançar novos patamares de sucesso digital! Seja você
                         uma
                         pequena empresa que está começando a explorar o mundo online ou uma grande corporação em busca
@@ -216,9 +209,7 @@
                         impulsionem o
                         seu crescimento.
                     </p>
-
                 </div>
-
                 <!-- Card de serviços -->
                 <!-- Refaturar trocar a div por uma lista não ordenada -->
                 <div class="flex items-center justify-center gap-5 flex-wrap">
@@ -226,7 +217,7 @@
                     <div
                         class="max-w-[280px] w-full flex flex-col items-center justify-center  hover:shadow-xl rounded-lg pb-2 effect-card-1">
                         <figure>
-                            <img src="assets/icon-marketing.png" alt="icon de marketing" title="icon de Marketing">
+                            <img src="assets/icon-marketing.svg" alt="icon de marketing" title="icon de Marketing">
                             <figcaption class="text-[7px] text-center">
                                 Ícone criado por
                                 <a href="https://www.figma.com/@isro1">@isro1</a>
@@ -237,7 +228,7 @@
                         <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
                             DIGITAL MARKETING
                         </h4>
-                        <p class="text-grayParagrafo text-[14px] font-semibold text-center">
+                        <p class="text-grayParagrafo text-[14px] text-sm  text-center">
                             Usar as mídias digitais como um esforço em marketing, publicidade e atividades promocionais
                             para atingir os objetivos da empresa.
                         </p>
@@ -246,7 +237,7 @@
                     <div
                         class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2 effect-card-2">
                         <figure>
-                            <img src="assets/icon-dev.png" alt="icon de Dev" title="icon de Development">
+                            <img src="assets/icon-dev.svg" alt="icon de Dev" title="icon de Development">
                             <figcaption class="text-[7px] text-center">
                                 Ícone criado por
                                 <a href="https://www.figma.com/@isro1">@isro1</a>
@@ -257,7 +248,7 @@
                         <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
                             WEB DEVELOPMENT
                         </h4>
-                        <p class="text-grayParagrafo text-[14px] font-semibold text-center">
+                        <p class="text-grayParagrafo text-[14px] text-sm text-center">
                             O processo de trabalho de desenvolvimento de um site simples ou complexo é dinâmico desde a
                             fase de planejamento até a avaliação.
                         </p>
@@ -266,7 +257,7 @@
                     <div
                         class="max-w-[280px] w-full flex flex-col items-center justify-center hover:shadow-xl rounded-lg pb-2 effect-card-3">
                         <figure>
-                            <img src="assets/icon-design.png" alt="icon de Web Designer" title="icon de Web Designer">
+                            <img src="assets/icon-design.svg" alt="icon de Web Designer" title="icon de Web Designer">
                             <figcaption class="text-[7px] text-center">
                                 Ícone criado por
                                 <a href="https://www.figma.com/@isro1">@isro1</a>
@@ -277,7 +268,7 @@
                         <h4 class="text-center font-poppins font-bold text-[16px] mb-2">
                             WEBSITE DESIGN
                         </h4>
-                        <p class="text-grayParagrafo text-[14px] font-semibold text-center">
+                        <p class="text-grayParagrafo text-[14px] text-sm text-center">
                             Crie um site uma coleção de conteúdo online, incluindo documentos e aplicativos que residem
                             em um servidor Web.
                         </p>
@@ -293,11 +284,10 @@
             <h2 class="text-center font-bold text-2xl uppercase mb-7 efect-title">
                 Planos disponiveis
             </h2>
-
             <div
                 class="flex justify-center items-center flex-wrap gap-2  w-full mx-auto bg-gradient-to-t from-[#1460ee] from-50% to-white to-50% pb-20">
                 <!-- Plano Basic -->
-                <div
+                <div title="Plano Basico"
                     class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-1 bg-white">
 
                     <h3 class="font-bold my-2">Basic</h3>
@@ -308,18 +298,15 @@
 
                         <li>Suporte 24/7</li>
                         <li>2 E-mails</li>
-
-
                     </ul>
-
-                    <button title="Adquira nossos planos" class="
+                    <button title="Adquira nosso plano" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
                      active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Basic')">
                         Adquirir
                     </button>
                 </div>
                 <!-- Plano Pro -->
-                <div
+                <div title="Plano Pro"
                     class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-2 bg-white">
 
                     <h3 class="font-bold my-2">Pro</h3>
@@ -334,14 +321,14 @@
 
                     </ul>
 
-                    <button title="Adquira nossos planos" class="
+                    <button title="Adquira nosso plano" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
                      active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Pro')">
                         Adquirir
                     </button>
                 </div>
                 <!-- Plano utimate -->
-                <div
+                <div title="Plano ultimate"
                     class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-3 bg-white">
 
                     <h3 class="font-bold my-2">Ultimate</h3>
@@ -356,14 +343,14 @@
 
                     </ul>
 
-                    <button title="Adquira nossos planos" class="
+                    <button title="Adquira nosso plano" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
                      active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Ultimate')">
                         Adquirir
                     </button>
                 </div>
                 <!-- Plano 4 -->
-                <div
+                <div title="Plano mudar"
                     class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-4 bg-white">
 
                     <h3 class="font-bold my-2">Mudar</h3>
@@ -377,14 +364,14 @@
 
                     </ul>
 
-                    <button title="Adquira nossos planos" class="
+                    <button title="Adquira nosso plano" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
                      active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Mudar')">
                         Adquirir
                     </button>
                 </div>
                 <!-- Plano 5 -->
-                <div
+                <div title="Plano mudar"
                     class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-5 bg-white">
 
                     <h3 class="font-bold my-2">Mudar</h3>
@@ -399,7 +386,7 @@
 
                     </ul>
 
-                    <button title="Adquira nossos planos" class="
+                    <button title="Adquira nosso plano" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
                      active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Mudar')">
                         Adquirir
@@ -413,8 +400,8 @@
                     Gostou de algum plano, entre em contato com um de nosso agentes.
                 </h2>
 
-                <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank"
-                    class="bg-green-500 text-zinc-50 font-bold px-5 py-2 rounded-xl xsmall:text-sm effect-serves-description hover:scale-105">
+                <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank" title="Entrar em Contato"
+                    class="bg-green-500 text-zinc-50 font-bold px-5 py-2 rounded-xl xsmall:text-sm effect-serves-description">
                     Agente uma consulta Gratis
                 </a>
             </div>
@@ -424,20 +411,21 @@
             <!-- Pequeno texto sobre a empresa -->
             <div class="flex items-center justify-center gap-4 mb-12 flex-wrap max-w-[1440px] w-full mx-auto">
                 <figure class="lg:w-6/12 effect-img-about">
-                    <img src="assets/icon-sbore.png" alt="Icon Banner da descrição da empresa"
-                        title="Icon Banner da descrição da empresa" class="lg:w-10/12">
+                    <img src="assets/ilustration-sobre.svg" alt="Ilustração Banner da descrição da empresa"
+                        title="Ilustração Banner da descrição" class="lg:w-10/12">
                 </figure>
 
                 <div class="w-2/4 text-justify xsmall:w-11/12 small:w-11/12 md:w-10/12 lg:w-5/12 effect-text-about">
                     <h2 class="font-bold uppercase text-center mb-5 text-2xl efect-title" title="Quem somos">
                         Quem Somos
                     </h2>
-                  
-                
+
+
                     <P class="mb-3 leading-8 " title="um breve resumo sobre a empresa">
-                        A DNA Markting se especializa em criar campanhas envolventes e conteúdo criativo que falam
+                        A DNA Marketing se especializa em criar campanhas envolventes e conteúdo criativo que falam
                         diretamente com o publico mais jovem e mais experiente,
-                       <!--  a geração Z e os millennial --> utilizando as últimas tecnologias e plataformas de mídia social
+                        <!--  a geração Z e os millennial --> utilizando as últimas tecnologias e plataformas de mídia
+                        social
                         para maximizar o
                         impacto e a interação. Seus serviços incluem marketing de influência, gestão de mídias sociais,
                         criação de conteúdo viral,
@@ -500,9 +488,10 @@
                         <!-- Input Telefone -->
                         <div class="flex flex-col">
                             <label for="userPhone" class="my-2">
-                                Telefone ( Cel ):
+                                Telefone ( Celular ):
                             </label>
-                            <input type="tel" name="userPhone" id="userPhone" title="Digite seu Número de Celular"
+                            <input type="tel" name="userPhone" id="userPhone"
+                                title="Digite seu Número de Celular ou Telefone"
                                 class="bg-transparent p-2 font-poppins border-b-2 rounded-lg hover:bg-zinc-50 hover:text-zinc-900"
                                 placeholder="Digite o Número de telefone" autocomplete="tel">
                             <p class="text-[#ff3b25] invisible">Mensagem De Erro....</p>
@@ -520,7 +509,7 @@
 
                         <div class="my-7 mx-auto">
                             <button title="Enviar o formulario" id="btn-submit-form" type="submit"
-                                class="bg-green-500 hover:bg-green-600 py-2 px-10 font-bold rounded-lg active:scale-105">
+                                class="bg-green-500 hover:bg-green-600 py-2 px-12 font-bold rounded-lg active:scale-105">
                                 Enviar
                             </button>
                         </div>
@@ -536,10 +525,9 @@
 
         <figure class="flex items-center justify-center mb-5">
             <a href="index.html">
-                <img src="assets/Frame 1.png" alt="Logo da Empresa" class="max-w-36 w-full"
+                <img src="assets/icon-logo-footer.svg" alt="Logo da Empresa" class="max-w-40 w-full"
                     title="Logo da Empresa Dna Marketing">
             </a>
-
         </figure>
 
         <div
@@ -551,28 +539,25 @@
                             Redes Sociais
                         </h3>
                     </li>
-
                     <li>
                         <figure class="flex space-x-4 mt-4">
                             <a href="https://www.facebook.com/profile.php?id=61556172175682&locale=pt_BR"
                                 target="_blank">
-                                <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10"
+                                <img src="assets/icon-fecebook.svg" alt="Icone da rede social Fecebook" width="30px"
                                     title="Rede Social Fecebook">
                             </a>
-                            <a href="" target="_blank">
-                                <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" class="w-10"
-                                    title="Rede Social Linkeding">
+                            <a href="#" target="_blank">
+                                <img src="assets/icon-linkedin.svg" alt="Icone da rede social Linkeding" width="30px"
+                                    title="Rede Social Linkedin">
                             </a>
                             <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank">
-                                <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" class="w-10"
+                                <img src="assets/icon-WhatsApp.svg" alt="Icone da rede social WhatsApp" width="30px"
                                     title="Rede Social WhatsApp">
-
                             </a>
                         </figure>
                     </li>
                 </ul>
             </div>
-
             <div class=" text-center">
                 <ul class="space-y-2">
                     <li>
@@ -580,15 +565,16 @@
                             Empresa
                         </h3>
                     </li>
-
                     <li>
-                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8" target="_blank">Local: R. Viçosa do Ceará
+                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8" target="_blank"
+                            title="Sede da empresa">Local: R. Viçosa do Ceará
                         </a>
                     </li>
                     <li>
-                        <a href="tel:71 99619-3437 ">WhatsApp: (71) 99619-3437 </a>
+                        <a href="tel:71 99619-3437" target="_blank" title="Telefone da Empresa">Telefone: (71)
+                            99619-3437 </a>
                     </li>
-                    <li>
+                    <li title="Horário de funcionamento">
                         Atendimento das 09hrs ás 17hrs
                     </li>
                 </ul>
@@ -597,18 +583,12 @@
 
         <div class="flex items-center justify-center">
             <p class="text-[10px] xsmall:text-[8px]">
-                &copy; 2024 DNA MARKETING DIGITAL. Todos os direitos reservados.
+                &copy; 2024 DNA MARKETING DIGITAL - Todos os direitos reservados.
             </p>
         </div>
-
     </footer>
-
-    <script>
-        $('#userPhone').mask('(00) 00000-0000');
-    </script>
+    <script>  $('#userPhone').mask('(00) 00000-0000'); </script>
     <script src="js/index.js"></script>
-    <script src="js/Faq.js"></script>
-
 </body>
 
 </html>

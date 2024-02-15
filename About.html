@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta tag que descreve o conteudo da sua pagina, ajuda o usuário a saber do que se trata a pagina -->
-    <meta name="description" content="Especialista em soluções de marketing digital, nossa agência oferece serviços personalizados para impulsionar o crescimento de empresas de todos os tamanhos. Desde SEO, mídias sociais até campanhas de PPC, transformamos sua presença online em resultados reais.">
-    <!-- meta tag que descreve quem criou a pagina -->
+    <meta name="description" content="Descubra na nossa seção Quem Somos como nossa agência de marketing digital combina estratégias inovadoras com experiência de mercado para impulsionar seu negócio. Conheça nossa equipe, valores e sucesso de clientes!">
     <meta name="author" content="DNA Marketing Digital" />
-    <!-- Chaves da pagina, É quando você pesquisa pelo um nome e aparece na pesquisa a pagina -->
-    <meta name="keywords" content="Dna Marketing Digital, marketing digital, estratégias de marketing digital, tendências de marketing digital, fotografia digital, imagens digitais, tecnologia digital, inovação digital, mídia digital, redes sociais, marketing online">
-    <!-- meta tag robots, ela se refere ao navegador e específica se será visivel a pagina ou não ou se pode usar um link de referencia dentro da pagina-->
+    <meta name="keywords" content="Agência de Marketing Digital, Especialistas em SEO, Estratégias de Mídias Sociais, Marketing de Conteúdo, Soluções de Publicidade Digital, Crescimento de Negócios Online, Consultoria em Marketing Digital, Inovação em Marketing, Equipe de Marketing Profissional, Sucesso do Cliente em Marketing">
     <meta name="robots" content="index follow" />
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <!-- icon de diferentes tamanhos de telas -->
-    <link rel="apple-touch-icon" href="./assests/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./assests/android-chrome-512x512.png" sizes="512x512">
-    <link rel="manifest" href="manifest.json" />
-
+    <meta name="theme-color" content="#00A8FE">
+    <meta property="og:image" content="https://a.imagem.app/oalLCW.png">
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:title" content="Dna Marketing - Quem Somos">
+    <meta property="og:site_name" content="Quem é Dna Marketing, Agência de Marketing Digital, o que a Dna Marketing faz, Quais são os serviços da Dna Marketing" />
+    <meta name="og:locale" content="pt_BR" />
+    <meta property="og:description" content="Descubra Quem Somos como nossa agência de marketing digital combina estratégias inovadoras com experiência de mercado">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Sempre que o site trocar de URL ou mudar de Host, trocar o content com a URL de destino -->
+    <!-- <meta property="og:url" content="" /> -->
     <title>DNA Marketing - Sobre</title>
-
-    <!-- Link da font de texto -->
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+    <!-- icon de diferentes tamanhos de telas -->
+    <link rel="apple-touch-icon" href="./assets/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./assets/android-chrome-512x512.png" sizes="512x512" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chat -->
+    <!-- <script src="//code.jivosite.com/widget/R7oc72HXBU" async></script> -->
     <link rel="stylesheet" href="styles/style.css">
-
     <script>
         tailwind.config = {
             theme: {
-
                 screens: {
                     'xsmall': { 'max': '380px' },
                     'small': { 'min': '381px', 'max': '599px' },
@@ -40,40 +44,27 @@
                     'xl': { 'min': '1441px', 'max': '1900px' },
                     '2xl': { 'min': '1901px' }
                 },
-
                 extend: {
-                    backgroundColor: {
-                        blue: "#152ec0"
-                    },
+                    backgroundColor: { blue: "#152ec0" },
                     colors: {
                         clifford: '#da373d',
                         blueText: "0803FF",
                         grayParagrafo: "#5B5F62"
                     },
-                    fontFamily: {
-                        'poppins': "'Poppins'"
-                    },
-
-                }
-            }
-        }
+                    fontFamily: { 'poppins': "'Poppins'"},
+                }}}
     </script>
-    <!-- Chat -->
-    <script src="//code.jivosite.com/widget/R7oc72HXBU" async></script>
 </head>
 
 <body>
-
     <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
         <div class="max-w-[1440px] mx-auto flex justify-around items-center">
             <figure>
                 <a href="index.html" title="Logo da pagina">
-                    <img src="assets/Frame 1.png" alt="" width="90px">
+                    <img src="assets/icon-logo.svg" alt="" width="90px">
                 </a>
             </figure>
-
             <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
-
                 <button type="button" onclick="BtnClose()" title="Abrir Menu">
                     <!-- Svg menu hamburgue -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -82,9 +73,7 @@
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                     </svg>
                 </button>
-
             </div>
-
             <nav id="navBar"
                 class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
 
@@ -104,35 +93,35 @@
                     class="flex justify-center items-center space-x-10  small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
                     <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                        >
-                        <a href="index.html#plan" title="Sessão planos da pagina"
+                        <a href="index.html#plan" title="planos"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Planos</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                        >
-                        <a href="index.html#about" title="Sessão planos da pagina"
+                        <a href="index.html#about" title="Quem Somos"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
-                            Quem Sobre</a>
+                            Sobre</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         >
-                        <a href="index.html#services" title="Sessão Serviços da pagina"
+                        <a href="index.html#services" title="Serviços"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Serviços</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink">
-                        <a href="Faq.html" title="serviços"
+                        <a href="Faq.html" title="Perguntas Frequentes"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             FAQS</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105 navLink"
                        >
-                        <a title="Sessão contato da pagina" href="index.html#contact-form" class="xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                        <a title="Entrar em Contato" href="index.html#contact-form" class="bg-green-600 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
                             small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
-                            md:bg-green-400 md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
-                             lg:bg-green-400 lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
-                             xl:bg-green-400 xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
-                             2xl:bg-green-400 2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
+                             md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
+                              lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
+                             xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
+                              2xl:py-2 2xl:px-6 2xl:rounded-xl 2xl:text-zinc-50">
                             Contato</a>
                     </li>
                 </ul>
@@ -145,7 +134,7 @@
     <section id="about">
         <!-- Sobre Nos -->
         <div class="w-3/4 mx-auto my-10 font-poppins xsmall:w-11/12 small:w-11/12 max-w-[1440px] mx-auto">
-            <h2 class="uppercase text-center font-bold text-2xl xsmall:xl">
+            <h2 class="uppercase text-center font-bold text-2xl xsmall:xl" title="Quem Somos">
                 Sobre nós
             </h2>
 
@@ -187,13 +176,15 @@
     <footer class="gradient-Global text-zinc-50 font-poppins text-xs pt-10 ">
 
         <figure class="flex items-center justify-center mb-5">
-            <img src="assets/Frame 1.png" alt="" class="max-w-36 w-full">
+            <a href="index.html">
+                <img src="assets/icon-logo-footer.svg" alt="Logo da Empresa" class="max-w-40 w-full"
+                    title="Logo da Empresa Dna Marketing">
+            </a>
         </figure>
-
         <div
             class="flex items-center justify-around mb-10 small:flex-col xsmall:flex-col small:space-y-10 xsmall:space-y-10 xsmall:mt-10 small:mt-10 mt-10 max-w-[1440px] mx-auto">
             <div>
-                <ul class="">
+                <ul>
                     <li>
                         <h3 class="font-bold text-xl">
                             Redes Sociais
@@ -202,43 +193,51 @@
 
                     <li>
                         <figure class="flex space-x-4 mt-4">
-                            <img src="assets/icon-fecebook.png" alt="Icone da rede social Fecebook" class="w-10">
-                            <img src="assets/icon-linkeding.png" alt="Icone da rede social Linkeding" class="w-10">
-                            <img src="assets/icon-whatsApp.png" alt="Icone da rede social WhatsApp" class="w-10">
+                            <a href="https://www.facebook.com/profile.php?id=61556172175682&locale=pt_BR"
+                                target="_blank">
+                                <img src="assets/icon-fecebook.svg" alt="Icone da rede social Fecebook" width="30px"
+                                    title="Rede Social Fecebook">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="assets/icon-linkedin.svg" alt="Icone da rede social Linkeding" width="30px"
+                                    title="Rede Social Linkedin">
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank">
+                                <img src="assets/icon-WhatsApp.svg" alt="Icone da rede social WhatsApp" width="30px"
+                                    title="Rede Social WhatsApp">
 
+                            </a>
                         </figure>
                     </li>
                 </ul>
             </div>
 
             <div class=" text-center">
-                <ul class="space-y-2">
+                <ul class="space-y-2 small:space-y-3 xsmall:space-y-3">
                     <li>
                         <h3 class="font-bold text-2xl">
                             Empresa
                         </h3>
                     </li>
                     <li>
-                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8">Local: R. Viçosa do Ceará </a>
+                        <a href="https://maps.app.goo.gl/KFNcCHXDbVVV64si8" target="_blank" title="Sede da empresa">Local: R. Viçosa do Ceará
+                        </a>
                     </li>
                     <li>
-                        <a href="">Atendimento das 09hrs ás 17hrs</a>
+                        <a href="tel:71 99619-3437" target="_blank" title="Telefone da Empresa">Telefone: (71) 99619-3437 </a>
                     </li>
-                    <li>
-                        <a href="tel:11 99999-9999">WhatsApp: (11) 99999-9999</a>
+                    <li title="Horário de funcionamento">
+                        Atendimento das 09hrs ás 17hrs
                     </li>
                 </ul>
             </div>
         </div>
-
         <div class="flex items-center justify-center">
             <p class="text-[10px] xsmall:text-[8px]">
                 &copy; 2024 DNA MARKETING DIGITAL. Todos os direitos reservados.
             </p>
         </div>
     </footer>
-
     <script src="js/MenuNav.js"></script>
 </body>
-
 </html>
