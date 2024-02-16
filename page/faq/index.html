@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,21 +24,21 @@
 
     <title>Dna Marketing - Perguntas frequentes</title>
 
-    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/logo.ico" type="image/x-icon">
     <!-- icon de diferentes tamanhos de telas -->
-    <link rel="apple-touch-icon" href="./assets/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./assets/android-chrome-512x512.png" sizes="512x512" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="../../assets/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="../../assets/android-chrome-512x512.png" sizes="512x512" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png" />
     <!-- Manifest da pagina -->
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="../../manifest.json" />
     <!-- Link da font de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- Import Css -->
-    <link rel="stylesheet" href="styles/Faq.css">
+    <link rel="stylesheet" href="../../styles/Faq.css">
     <!-- O tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Config básica -->
@@ -71,8 +71,8 @@
     <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
         <div class="max-width-[1440px] flex justify-around items-center max-w-[1440px] mx-auto">
             <figure>
-                <a href="index.html">
-                    <img src="assets/icon-logo.svg" alt="Logo da Empresa DNA Marketing" width="90px"
+                <a href="../../index.html">
+                    <img src="../../assets/icon-logo.svg" alt="Logo da Empresa DNA Marketing" width="90px"
                         title="Logo da Empresa DNA Marketing">
                 </a>
             </figure>
@@ -81,17 +81,13 @@
 
                 <button type="button" onclick="BtnClose()" title="Menu">
                     <!-- Svg menu hamburgue -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
+                    <img src="../../assets/icon-hamburgue.svg" alt="">
                 </button>
 
             </div>
 
             <nav id="navBar"
-                class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
+                class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 xsmall:overflow-auto small:overflow-auto small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
 
                 <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden 2xl:hidden">
                     <button type="button" onclick="BtnClose()" title="Fechar menu">
@@ -109,32 +105,32 @@
                     class="flex justify-center items-center space-x-10 md:m-0 small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
                     <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         onclick="BtnClose()">
-                        <a title="Planos" href="index.html#plan"
+                        <a title="Planos" href="../../index.html#plan"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Planos</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         onclick="BtnClose()">
-                        <a title="Quem Somos" href="index.html#about"
+                        <a title="Quem Somos" href="../../index.html#about"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
                             Sobre</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         onclick="BtnClose()">
-                        <a href="index.html#services" title="serviços"
+                        <a href="../../index.html#services" title="serviços"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Serviços</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         onclick="BtnClose()">
-                        <a href="Faq.html" title="Perguntas Frequentes"
+                        <a href="../../page/faq/index.html" title="Perguntas Frequentes"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             FAQS</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105"
                         onclick="BtnClose()">
-                        <a title="Botão Contato" href="index.html#contact-form" class="bg-green-600 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
-                            small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
+                        <a title="Botão Contato" href="../../index.html#contact-form" class="bg-green-600 xsmall:bg-transparent xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                            small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900 small:bg-transparent
                             md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
                              lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
                               xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
@@ -142,6 +138,7 @@
                             Contato</a>
                     </li>
                 </ul>
+
             </nav>
         </div>
 
@@ -164,7 +161,7 @@
                         <div class="flex items-center justify-between">
 
                             <h3 class="font-semibold mb-2">1 - O que é marketing digital?</h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg"
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg"
                                 width="20px">
 
 
@@ -192,7 +189,7 @@
                             <h3 class="font-semibold mb-2">
                                 2 - Como o marketing digital pode beneficiar meu negócio?
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -217,7 +214,7 @@
                             <h3 class="font-semibold mb-2">
                                 3 - Qual é a diferença entre SEO e SEM?
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -242,7 +239,7 @@
                             <h3 class="font-semibold mb-2">
                                 4 - Como posso medir o sucesso das minhas campanhas de marketing digital?
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -269,7 +266,7 @@
                             <h3 class="font-semibold mb-2">
                                 5 - Quanto tempo leva para ver resultados com o marketing digital?
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -294,7 +291,7 @@
                             <h3 class="font-semibold mb-2">
                                 6 - O que é marketing de conteúdo e por que é importante?
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -321,7 +318,7 @@
                             <h3 class="font-semibold mb-2 ">
                                 7 - Como escolher as plataformas de redes sociais certas para meu negócio?
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -347,7 +344,7 @@
                             <h3 class="font-semibold mb-2">
                                 8 - O que é email marketing e como posso utilizá-lo efetivamente?
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -373,7 +370,7 @@
                             <h3 class="font-semibold mb-2">
                                 9 - Como Adquirir um Plano ?
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -400,7 +397,7 @@
                             <h3 class="font-semibold mb-2">
                                 10 - Formas de pagamentos
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -424,7 +421,7 @@
                             <h3 class="font-semibold mb-2">
                                 11 - Personalização de planos
                             </h3>
-                            <img src="assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
+                            <img src="../../assets/icon-start.svg" alt="" class="icon-faq bg-blue-500 rounded-lg "
                                 width="20px">
 
                         </div>
@@ -446,8 +443,8 @@
     <footer class="gradient-Global text-zinc-50 font-poppins text-xs pt-10">
 
         <figure class="flex items-center justify-center mb-5">
-            <a href="index.html">
-                <img src="assets/icon-logo-footer.svg" alt="Logo da Empresa" class=" w-full"
+            <a href="../../index.html">
+                <img src="../../assets/icon-logo-footer.svg" alt="Logo da Empresa" class=" w-full"
                     title="Logo da Empresa Dna Marketing">
             </a>
 
@@ -467,16 +464,16 @@
                         <figure class="flex space-x-4 mt-4">
                             <a href="https://www.facebook.com/profile.php?id=61556172175682&locale=pt_BR"
                                 target="_blank">
-                                <img src="assets/icon-fecebook.svg" alt="Icone da rede social Fecebook" width="30px"
-                                    title="Rede Social Fecebook">
+                                <img src="../../assets/icon-fecebook.svg" alt="Icone da rede social Fecebook"
+                                    width="30px" title="Rede Social Fecebook">
                             </a>
                             <a href="#" target="_blank">
-                                <img src="assets/icon-linkedin.svg" alt="Icone da rede social Linkeding" width="30px"
-                                    title="Rede Social Linkedin">
+                                <img src="../../assets/icon-linkedin.svg" alt="Icone da rede social Linkeding"
+                                    width="30px" title="Rede Social Linkedin">
                             </a>
                             <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank">
-                                <img src="assets/icon-WhatsApp.svg" alt="Icone da rede social WhatsApp" width="30px"
-                                    title="Rede Social WhatsApp">
+                                <img src="../../assets/icon-WhatsApp.svg" alt="Icone da rede social WhatsApp"
+                                    width="30px" title="Rede Social WhatsApp">
 
                             </a>
                         </figure>
@@ -515,8 +512,8 @@
 
     </footer>
 
-    <script src="js/Faq.js"></script>
-    <script src="js/MenuNav.js"></script>
+    <script src="../../js/Faq.js"></script>
+    <script src="../../js/MenuNav.js"></script>
 </body>
 
 </html>

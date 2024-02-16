@@ -7,6 +7,15 @@ const userWeb = document.getElementById("userWeb")
 const btnForm = document.getElementById("btn-submit-form")
 const navBar = document.getElementById("navBar")
 
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+        navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then(res => console.log("service worker ok"))
+            .catch(err => console.log("service worker not registered", err))
+    })
+}
+
 // //menu mobile
 function BtnClose() {
 
@@ -19,6 +28,7 @@ function BtnClose() {
         navBar.classList.add("xsmall:hidden")
     }
 }
+
 //validar nome 
 function checkInputUsername() {
     const usernameValue = userName.value;

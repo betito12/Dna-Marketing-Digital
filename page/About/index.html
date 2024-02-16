@@ -19,20 +19,20 @@
     <!-- Sempre que o site trocar de URL ou mudar de Host, trocar o content com a URL de destino -->
     <!-- <meta property="og:url" content="" /> -->
     <title>DNA Marketing - Sobre</title>
-    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/logo.ico" type="image/x-icon">
     <!-- icon de diferentes tamanhos de telas -->
-    <link rel="apple-touch-icon" href="./assets/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./assets/android-chrome-512x512.png" sizes="512x512" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="../../assets/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="../../assets/android-chrome-512x512.png" sizes="512x512" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png" />
+    <link rel="manifest" href="../../manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chat -->
     <!-- <script src="//code.jivosite.com/widget/R7oc72HXBU" async></script> -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -60,22 +60,18 @@
     <header id="home" class=" py-3 shadow-lg shadow-zinc-100 small:relative">
         <div class="max-w-[1440px] mx-auto flex justify-around items-center">
             <figure>
-                <a href="index.html" title="Logo da pagina">
-                    <img src="assets/icon-logo.svg" alt="" width="90px">
+                <a href="../../index.html" title="Logo da pagina">
+                    <img src="../../assets/icon-logo.svg" alt="" width="90px">
                 </a>
             </figure>
             <div class="md:hidden lg:hidden xl:hidden 2xl:hidden">
                 <button type="button" onclick="BtnClose()" title="Abrir Menu">
                     <!-- Svg menu hamburgue -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
+                    <img src="../../assets/icon-hamburgue.svg" alt="">
                 </button>
             </div>
             <nav id="navBar"
-                class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
+                class="small:fixed small:z-10 xsmall:z-10 xsmall:fixed small:top-0 small:right-0 small:w-3/4 xsmall:overflow-auto small:overflow-auto small:block small:bg-blue xsmall:top-0 xsmall:right-0 xsmall:w-3/4 xsmall:block xsmall:bg-blue small:hidden xsmall:hidden small:h-screen xsmall:h-screen">
 
                 <div class="my-3 text-zinc-50 ml-5 md:hidden lg:hidden xl:hidden 2xl:hidden">
                     <button type="button" onclick="BtnClose()" class="font-bold" title="Fechar menu">
@@ -93,31 +89,31 @@
                     class="flex justify-center items-center space-x-10  small:block small:space-x-0  small:text-center xsmall:block xsmall:space-x-0  xsmall:text-center">
                     <li class="hover:text-zinc-500 small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                        >
-                        <a href="index.html#plan" title="planos"
+                        <a href="../../index.html#plan" title="planos"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Planos</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                        >
-                        <a href="index.html#about" title="Quem Somos"
+                        <a href="../../index.html#about" title="Quem Somos"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 small:hover:text-zinc-900">
                             Sobre</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink"
                         >
-                        <a href="index.html#services" title="Serviços"
+                        <a href="../../index.html#services" title="Serviços"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             Serviços</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold navLink">
-                        <a href="Faq.html" title="Perguntas Frequentes"
+                        <a href="../../page/faq/index.html" title="Perguntas Frequentes"
                             class="small:text-zinc-50 xsmall:text-zinc-50 small:block small:py-5 small:hover:text-zinc-900  xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900">
                             FAQS</a>
                     </li>
                     <li class="hover:text-zinc-500  small:hover:bg-zinc-50 xsmall:hover:bg-zinc-50 font-semibold active:scale-105 navLink"
                        >
-                        <a title="Entrar em Contato" href="index.html#contact-form" class="bg-green-600 xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
-                            small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900
+                        <a title="Entrar em Contato" href="../../index.html#contact-form" class="bg-green-600 xsmall:bg-transparent xsmall:hover:text-zinc-900 xsmall:block xsmall:py-5 xsmall:hover:text-zinc-900 xsmall:text-zinc-50
+                            small:text-zinc-50  small:block small:py-5 small:hover:text-zinc-900 small:bg-transparent
                              md:py-2 md:px-6 md:rounded-xl md:text-zinc-50
                               lg:py-2 lg:px-6 lg:rounded-xl lg:text-zinc-50
                              xl:py-2 xl:px-6 xl:rounded-xl xl:text-zinc-50
@@ -176,8 +172,8 @@
     <footer class="gradient-Global text-zinc-50 font-poppins text-xs pt-10 ">
 
         <figure class="flex items-center justify-center mb-5">
-            <a href="index.html">
-                <img src="assets/icon-logo-footer.svg" alt="Logo da Empresa" class="max-w-40 w-full"
+            <a href="../../index.html">
+                <img src="../../assets/icon-logo-footer.svg" alt="Logo da Empresa" class="max-w-40 w-full"
                     title="Logo da Empresa Dna Marketing">
             </a>
         </figure>
@@ -195,15 +191,15 @@
                         <figure class="flex space-x-4 mt-4">
                             <a href="https://www.facebook.com/profile.php?id=61556172175682&locale=pt_BR"
                                 target="_blank">
-                                <img src="assets/icon-fecebook.svg" alt="Icone da rede social Fecebook" width="30px"
+                                <img src="../../assets/icon-fecebook.svg" alt="Icone da rede social Fecebook" width="30px"
                                     title="Rede Social Fecebook">
                             </a>
                             <a href="#" target="_blank">
-                                <img src="assets/icon-linkedin.svg" alt="Icone da rede social Linkeding" width="30px"
+                                <img src="../../assets/icon-linkedin.svg" alt="Icone da rede social Linkeding" width="30px"
                                     title="Rede Social Linkedin">
                             </a>
                             <a href="https://api.whatsapp.com/send/?phone=71996193437" target="_blank">
-                                <img src="assets/icon-WhatsApp.svg" alt="Icone da rede social WhatsApp" width="30px"
+                                <img src="../../assets/icon-WhatsApp.svg" alt="Icone da rede social WhatsApp" width="30px"
                                     title="Rede Social WhatsApp">
 
                             </a>
@@ -238,6 +234,6 @@
             </p>
         </div>
     </footer>
-    <script src="js/MenuNav.js"></script>
+    <script src="../../js/MenuNav.js"></script>
 </body>
 </html>
