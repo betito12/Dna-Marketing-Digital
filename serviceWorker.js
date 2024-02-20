@@ -1,30 +1,5 @@
-const NameService = "dna-marketing-V2"
-
-const assets = [
-    "/index.html",
-    "assests/icon-logo.svg",
-    "assests/icon-dev.svg",
-    "assests/icon-start.svg",
-    "assests/icon-close.svg",
-    "assests/icon-logo-footer.svg",
-    "js/faq.js",
-    "js/index.js",
-    "js/MenuNav.js",
-    "js/Reval.js",
-
-]
-
-self.addEventListener("install", () => {
-    installEvent.waitUntil(
-        caches.open(NameService).then(cache => {
-          cache.addAll(assets)
-        }))
-})
-
-self.addEventListener("fetch", fetchEvent => {
-    fetchEvent.respondWith(
-      caches.match(fetchEvent.request).then(res => {
-        return res || fetch(fetchEvent.request)
-      })
-    )
-  })
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');const NameCACHE="dna-marketing-V2"
+const assets=["./index.html","./page/faq/index.html","./page/About/index.html","./styles/style.css","./styles/Faq.css","./assets/faqs-banne.jpg","./assets/about-Banne.jpg","./assets/icon-logo-footer.svg","./js/faq.js","./js/index.js","./js/MenuNav.js","./js/Reval.js",]
+self.addEventListener("message",(event)=>{if(event.data&&event.data.type==="SKIP_WAITING"){self.skipWaiting()}});self.addEventListener('install',async(event)=>{event.waitUntil(caches.open(NameCACHE).then((cache)=>cache.addAll(assets)).catch(err=>console.log("não foi possivel instalar")))});if(workbox.navigationPreload.isSupported()){workbox.navigationPreload.enable()}
+self.addEventListener('fetch',(event)=>{if(event.request.mode==='navigate'){event.respondWith((async()=>{try{const preloadResp=await event.preloadResponse;if(preloadResp){return preloadResp}
+const networkResp=await fetch(event.request);return networkResp}catch(error){const cache=await caches.open(NameCACHE);const cachedResp=await cache.match(assets);return cachedResp}})())}})

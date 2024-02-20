@@ -1,36 +1,43 @@
 {
-    "short_name": "Dna Marketing",
-    "name": "Dna Marketing Digital",
-    "icons": [
-      {
-        "src": "./assets/logo.ico",
-        "sizes": "16x16",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "./assets/logo.png",
-        "sizes": "64x64 32x32 24x24",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "./assets/android-chrome-192x192.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "./assets/android-chrome-512x512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      },
-      {
-        "src": "./assets/maskable_icon.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "maskable"
-      }
-    ],
-    "start_url": "/Dna-Marketing-Digital/",
-    "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
-  }
+  "short_name": "Dna Marketing",
+  "name": "Dna Marketing Digital",
+  "icons": [
+    {
+      "src": "./assets/logo.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./assets/logo.png",
+      "sizes": "64x64 32x32 24x24",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./assets/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./assets/maskable_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/Dna-Marketing-Digital/",
+  "display": "standalone",
+  "theme_color": "#217dea",
+  "background_color": "#1ea1ef",
+  "id": "Dna Marketing",
+  "description": "Especialista em soluções de marketing digital, nossa agência oferece serviços personalizados e planos para impulsionar o crescimento de empresas de todos os tamanhos. Desde SEO, mídias sociais até Web design, transformamos sua presença online em resultados reais.",
+  "categories": [
+    "business",
+    "education",
+    "productivity"
+  ]
+}
