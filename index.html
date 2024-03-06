@@ -285,42 +285,47 @@
         <!-- Planos da plataforma -->
         <section id="plan" class="my-20">
 
-            <h2 class="text-center font-bold text-2xl uppercase mb-7 efect-title">
+            <h2 class="text-center font-bold text-3xl uppercase mb-7 efect-title">
                 Planos disponiveis
             </h2>
             <div
-                class="flex justify-center items-center flex-wrap gap-2  w-full mx-auto bg-gradient-to-t from-[#1460ee] from-50% to-white to-50% pb-20">
+                class="flex justify-center items-center flex-wrap gap-4  w-full mx-auto bg-gradient-to-t from-[#1460ee] from-50% to-white to-50% pb-20">
                 <!-- Plano Basic -->
                 <div title="Plano Basico"
                     class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-1 bg-white">
 
                     <h3 class="font-bold my-2">Basic</h3>
-                    <h4 class="font-bold text-3xl">R$ 10,00</h4>
-                    <P class="text-sm font-semibold">Mensal</P>
+                    <h4 class="font-bold text-3xl">R$ 600,00</h4>
+                    <P class="text-xs font-semibold">R$ 150,00 manutenção/mensal</P>
 
-                    <ul class="text-[#767676] text-sm my-4 space-y-1">
+                    <ul class="text-[#767676] text-sm my-4 space-y-1 px-10">
 
-                        <li>Suporte 24/7</li>
-                        <li>2 E-mails</li>
+                        <li class="border-b-2 ">2 E-mails</li>
+                        <li class="border-b-2 ">1 Site</li>
+                        <li class="border-b-2 ">2 Atualizações</li>
+                        <li class="border-b-2 ">Suporte 24/7</li>
                     </ul>
                     <button title="Adquira nosso plano" class="
                     bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
                      active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Basic')">
                         Adquirir
                     </button>
+                    <p class="text-xs text-[#767676] px-5 pb-2">Podendo adicionar mais beneficios</p>
                 </div>
-                <!-- Plano Pro -->
+                <!-- Plano Standard -->
                 <div title="Plano Pro"
                     class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-2 bg-white">
 
-                    <h3 class="font-bold my-2">Pro</h3>
-                    <h4 class="font-bold text-3xl">R$ 50,00</h4>
-                    <P class="text-sm font-semibold">Mensal</P>
+                    <h3 class="font-bold my-2">Standard</h3>
+                    <h4 class="font-bold text-3xl">R$ 900,00</h4>
+                    <P class="text-xs font-semibold">R$ 300,00 manutenção/mensal</P>
 
-                    <ul class="text-[#767676] text-sm my-4 space-y-1">
+                    <ul class="text-[#767676] text-sm my-4 space-y-1 px-10">
 
-                        <li>Suporte 24/7</li>
-                        <li>2 E-mails</li>
+                        <li class="border-b-2 ">5 E-mails</li>
+                        <li class="border-b-2 ">1 Site</li>
+                        <li class="border-b-2 ">5 Atualizações</li>
+                        <li class="border-b-2 ">Suporte 24/7</li>
 
 
                     </ul>
@@ -330,19 +335,22 @@
                      active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Pro')">
                         Adquirir
                     </button>
+                    <p class="text-xs text-[#767676] px-5 pb-2">Podendo adicionar mais beneficios</p>
                 </div>
-                <!-- Plano utimate -->
+                <!-- Plano Premium -->
                 <div title="Plano ultimate"
-                    class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-3 bg-white">
+                    class="shadow-xl hover:shadow-2xl max-w-[250px] min-h-[320px] w-full text-center rounded-xl effect-card-3 bg-white">
 
-                    <h3 class="font-bold my-2">Ultimate</h3>
-                    <h4 class="font-bold text-3xl">R$ 50,00</h4>
-                    <P class="text-sm font-semibold">Mensal</P>
+                    <h3 class="font-bold my-2">Premium</h3>
+                    <h4 class="font-bold text-3xl">R$ 1100,00</h4>
+                    <P class="text-xs font-semibold">R$ 350,00 manutenção/mensal</P>
 
-                    <ul class="text-[#767676] text-sm my-4 space-y-1">
+                    <ul class="text-[#767676] text-sm my-4 space-y-1 px-10">
 
-                        <li>Suporte 24/7</li>
-                        <li>2 E-mails</li>
+                        <li class="border-b-2 ">10 E-mails</li>
+                        <li class="border-b-2 ">1 Site</li>
+                        <li class="border-b-2 ">Atualizações ilimitada</li>
+                        <li class="border-b-2 ">Suporte 24/7</li>
 
 
                     </ul>
@@ -352,50 +360,19 @@
                      active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Ultimate')">
                         Adquirir
                     </button>
+                    <p class="text-xs text-[#767676] px-5 pb-2">Podendo adicionar mais beneficios</p>
                 </div>
-                <!-- Plano 4 -->
+
+                <!-- Plano Personalition -->
                 <div title="Plano mudar"
-                    class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-4 bg-white">
+                id="personalition-plan"
+                    class="shadow-xl cursor-pointer hover:shadow-2xl max-w-[250px] min-h-[320px] w-full text-center rounded-xl effect-card-4 bg-blue/80 flex items-center justify-center">
+                    <div class="text-white cursor-pointer">
 
-                    <h3 class="font-bold my-2">Mudar</h3>
-                    <h4 class="font-bold text-3xl">R$ 450,00</h4>
-                    <P class="text-sm font-semibold">Mensal</P>
-
-                    <ul class="text-[#767676] text-sm my-4 space-y-1">
-
-                        <li>Suporte 24/7</li>
-                        <li>2 E-mails</li>
-
-                    </ul>
-
-                    <button title="Adquira nosso plano" class="
-                    bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
-                     active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Mudar')">
-                        Adquirir
-                    </button>
+                        <h3 class="font-bold uppercase w-full h-11/12 cursor-pointer">Personalizar Plano</h3>
+                    </div>
                 </div>
-                <!-- Plano 5 -->
-                <div title="Plano mudar"
-                    class="shadow-xl hover:shadow-2xl max-w-[250px] w-full text-center rounded-xl effect-card-5 bg-white">
-
-                    <h3 class="font-bold my-2">Mudar</h3>
-                    <h4 class="font-bold text-3xl">R$ 500,00</h4>
-                    <P class="text-sm font-semibold">Mensal</P>
-
-                    <ul class="text-[#767676] text-sm my-4 space-y-1">
-
-                        <li>Suporte 24/7</li>
-                        <li>2 E-mails</li>
-
-
-                    </ul>
-
-                    <button title="Adquira nosso plano" class="
-                    bg-gradient-to-r from-[#134FAC] to-[#00F0C6] py-2 px-6 rounded-lg text-zinc-50 font-bold mb-2
-                     active:scale-105  transition-button-hover" onclick="HandlerPlanContact('Mudar')">
-                        Adquirir
-                    </button>
-                </div>
+               
             </div>
             <div class="flex justify-center items-center flex-col gap-5 pb-10 bg-[#1460ee] ">
 

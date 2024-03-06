@@ -28,3 +28,8 @@ userEmail.addEventListener("blur",()=>{checkInputEmail()})
 userPhone.addEventListener("blur",()=>{checkInputPhone()})
 window.addEventListener("scroll",()=>{const scroll=document.getElementById("btnscroll")
 if(window.scrollY>400){scroll.style.display="inline"}else{scroll.style.display="none"}})
+
+document.getElementById("personalition-plan").addEventListener("click", () => {
+
+    window.open("https://api.whatsapp.com/send/?phone=71996193437&text=Quero+Adquirir+o+Plano:+Personalizado")
+})
